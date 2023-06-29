@@ -1,0 +1,9 @@
+{
+  "fmt": {
+    "lineWidth": 120
+  },
+  "tasks": {
+    "bench": "deno run --allow-read --allow-write --allow-run --allow-net src/mod.ts"
+  },
+  "lock": false
+}
