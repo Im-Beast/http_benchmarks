@@ -1,6 +1,7 @@
 {
   "fmt": {
-    "lineWidth": 120
+    "lineWidth": 120,
+    "exclude": ["results"]
   },
   "tasks": {
     "bench": "deno run --allow-read --allow-write --allow-run --allow-net src/mod.ts"
