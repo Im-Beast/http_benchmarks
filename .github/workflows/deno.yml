@@ -1,0 +1,23 @@
+name: Deno fmt & lint
+
+on:
+  push:
+
+jobs:
+  benchmark:
+    name: "Deno fmt & lint"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v3
+
+      - name: Setup Deno vx.x.x
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: vx.x.x
+
+      - name: Verify formatting
+        run: deno fmt --check
+
+      - name: Run linter
+        run: deno lint
