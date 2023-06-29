@@ -176,7 +176,7 @@ export function formatResultComparison(dataset: BenchmarkResult[]): string {
   let table = `<table>
 <tr>
     <td align="center" rowspan="2">Name</td>
-    <td align="center" colspan="2">Baseline</td>
+    <td align="center" colspan="2">Good-o-meter</td>
     <td align="center" colspan="4">Throughput (rps)</td>
     <td align="center" colspan="3">Latency (ms)</td>
 </tr>

@@ -1,6 +1,6 @@
-# Name: Aqua 
+# Name: Deno.serveHttp 
   
-  ### Version: 1.3.5
+  ### Version: Deno 1.34.3
   ### Deno version: 1.34.3
 
 ## Summary
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>49.10k</td>
-    <td>53.83k</td>
-    <td>3.80k</td>
-    <td>0.52 MiB</td>
-    <td>1.30</td>
-    <td>0.64</td>
-    <td>4.07</td>
+    <td>100.82k</td>
+    <td>113.34k</td>
+    <td>8.80k</td>
+    <td>1.06 MiB</td>
+    <td>0.63</td>
+    <td>0.35</td>
+    <td>3.09</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>45438.13k</td>
-  <td>45438.13k</td>
-  <td>45438.13k</td>
-  <td>45438.13k</td>
-  <td>52311.69k</td>
-  <td>52928.96k</td>
-  <td>53831.74k</td>
+  <td>85174.88k</td>
+  <td>85174.88k</td>
+  <td>85174.88k</td>
+  <td>85174.88k</td>
+  <td>111248.17k</td>
+  <td>111802.99k</td>
+  <td>113341.55k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>1.10</td>
-  <td>1.10</td>
-  <td>1.10</td>
-  <td>1.10</td>
-  <td>1.65</td>
-  <td>1.75</td>
-  <td>2.21</td>
+  <td>0.54</td>
+  <td>0.54</td>
+  <td>0.54</td>
+  <td>0.54</td>
+  <td>0.76</td>
+  <td>0.83</td>
+  <td>1.49</td>
 </tr>
 </table>
