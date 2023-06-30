@@ -9,9 +9,9 @@ import type { BenchmarkInfo, BenchmarkResult } from "./types.ts";
 const BENCHMARK_PATH = "./benchmarks";
 const BENCHMARK_RESULTS_PATH = "./results";
 
-const BENCHMARK_STEPS: Record<string, [routes: string[], trackSteps: boolean]> = {
+const BENCHMARK_STEPS: Record<string, [routes: [string, number][], trackSteps: boolean]> = {
   "file_server": [FILE_SERVER_FILES, true],
-  "hello_world": [["", "", "", "", ""], false],
+  "hello_world": [[["", 1]], false],
 };
 
 const benchmarkList: Record<string, BenchmarkInfo[]> = {};

@@ -1,7 +1,13 @@
 import { crayon } from "./deps.ts";
 
 import { PROTOCOL_HTTP_URL_PORT } from "../benchmarks/SERVER_DATA.ts";
-import { averageBenchmarkerData, normalizeData } from "./normalize_data.ts";
+import {
+  divideNumericData,
+  meanNumericData,
+  multiplyNumericData,
+  normalizeData,
+  sumNumericObjects,
+} from "./normalize_data.ts";
 
 import type { BenchmarkInfo, BenchmarkResult, OhaJsonOutput } from "./types.ts";
 
@@ -9,7 +15,7 @@ const textDecoder = new TextDecoder();
 
 export async function benchmarkFramework(
   info: BenchmarkInfo,
-  steps: string[],
+  steps: [route: string, weight: number][],
   trackSteps: boolean,
 ): Promise<BenchmarkResult> {
   const deno = new Deno.Command("deno", {
@@ -23,36 +29,56 @@ export async function benchmarkFramework(
   // wait for a second so deno can fully start
   await new Promise((r) => setTimeout(r, 1000));
 
-  let benchmarkerOutput: BenchmarkResult;
-  for (const route of steps) {
+  const routeOutputs: Record<string, BenchmarkResult> = {};
+
+  let sumWeight = 0;
+  for (const [route, weight] of steps) {
+    sumWeight += weight;
+
     const testedUrl = `${PROTOCOL_HTTP_URL_PORT}/${route}`;
 
-    const oha = new Deno.Command("oha", {
-      args: [testedUrl, "-n", "25000", "-c", "64", "-j", "--no-tui"], // 25k requests | 64 concurrent workers | return as json | don't run tui
-      stdin: "null",
-      stderr: "piped",
-      stdout: "piped",
-    });
+    const results: BenchmarkResult[] = [];
+    for (let i = 0; i < 3; ++i) {
+      const oha = new Deno.Command("oha", {
+        args: [testedUrl, "-n", "10000", "-c", "64", "-j", "--no-tui"], // 25k requests | 64 concurrent workers | return as json | don't run tui
+        stdin: "null",
+        stderr: "piped",
+        stdout: "piped",
+      });
 
-    const output = await oha.output();
-    const parsedOutput: OhaJsonOutput = JSON.parse(
-      textDecoder.decode(output.stdout),
-    );
-    const convertedOutput = normalizeData(info, parsedOutput);
+      const output = await oha.output();
+      const parsedOutput: OhaJsonOutput = JSON.parse(
+        textDecoder.decode(output.stdout),
+      );
+      const convertedOutput = normalizeData(info, parsedOutput);
 
-    benchmarkerOutput &&= averageBenchmarkerData(benchmarkerOutput, convertedOutput);
-    benchmarkerOutput ??= convertedOutput;
-
-    if (trackSteps) {
-      benchmarkerOutput.steps[route] = convertedOutput;
+      results.push(convertedOutput);
     }
 
-    if (benchmarkerOutput.successRate !== 1) {
+    const result = routeOutputs[route] = {} as BenchmarkResult;
+    meanNumericData(result, results);
+
+    if (result.successRate !== 1) {
       throw new Error(
-        `${info.name} didn't achieve 100% success rate, instead achieved ${benchmarkerOutput.successRate} at ${route} route (${testedUrl})`,
+        `${info.name} didn't achieve 100% success rate, instead achieved ${result.successRate} at ${route} route (${testedUrl})`,
       );
     }
+
+    multiplyNumericData(result, weight);
   }
+
+  const benchmarkerOutput = {} as BenchmarkResult;
+  for (const route in routeOutputs) {
+    const output = routeOutputs[route];
+
+    sumNumericObjects(benchmarkerOutput, output);
+
+    if (trackSteps) {
+      benchmarkerOutput.steps ??= {};
+      benchmarkerOutput.steps[route] = output;
+    }
+  }
+  divideNumericData(benchmarkerOutput!, sumWeight);
 
   try {
     denoSubprocess.kill();
