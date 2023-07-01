@@ -1,10 +1,11 @@
 import { crayon, join } from "./deps.ts";
 
 import { benchmarkFramework } from "./benchmarker.ts";
+import { getBenchmarkList } from "./get_benchmarks.ts";
 import { FILE_SERVER_STEPS, MULTIPLE_ROUTES_STEPS } from "../benchmarks/SERVER_DATA.ts";
 import { formatResult, formatResultComparison } from "./format_results.ts";
 
-import type { BenchmarkInfo, BenchmarkResult } from "./types.ts";
+import type { BenchmarkResult } from "./types.ts";
 
 const BENCHMARK_CACHE_PATH = "./results/cache.json";
 
@@ -31,7 +32,6 @@ try {
   };
 }
 
-const BENCHMARK_PATH = "./benchmarks";
 const BENCHMARK_RESULTS_PATH = "./results";
 
 const BENCHMARK_STEPS: Record<string, [step: [method: string, route: string, weight: number][], trackSteps: boolean]> =
@@ -41,34 +41,8 @@ const BENCHMARK_STEPS: Record<string, [step: [method: string, route: string, wei
     "multiple_routes": [MULTIPLE_ROUTES_STEPS, true],
   };
 
-const benchmarkList: Record<string, BenchmarkInfo[]> = {};
+const benchmarkList = await getBenchmarkList();
 const benchmarkResults: Record<string, BenchmarkResult[]> = {};
-
-for await (const entry of Deno.readDir(BENCHMARK_PATH)) {
-  if (!entry.isDirectory || /SERVER_.+/.test(entry.name)) continue;
-
-  const benchmarks = benchmarkList[entry.name] ??= [];
-  const groupPath = join(BENCHMARK_PATH, entry.name);
-
-  for await (const groupEntry of Deno.readDir(groupPath)) {
-    if (!groupEntry.isFile) continue;
-
-    const benchmarkPath = join(groupPath, groupEntry.name);
-
-    const { NAME, DESCRIPTION, VERSION } = await import(`../${benchmarkPath}`);
-    if (!NAME || !VERSION) { // no description isn't an issue
-      throw new Error(`Benchmark at ${benchmarkPath} is missing one of those two exports: NAME, VERSION`);
-    }
-
-    benchmarks.push({
-      name: NAME,
-      description: DESCRIPTION,
-      version: VERSION,
-      path: benchmarkPath,
-      fileName: groupEntry.name,
-    });
-  }
-}
 
 for (const benchmarkGroup in benchmarkList) {
   await Deno.mkdir(join("./results", benchmarkGroup), { recursive: true });
