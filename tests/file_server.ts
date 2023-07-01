@@ -18,7 +18,7 @@ for (const [_, fileName] of FILE_SERVER_STEPS) {
   fileData[fileName] = buffer;
 }
 
-Deno.test("hello_world", async (t) => {
+Deno.test("file_server", async (t) => {
   for (const benchmark of benchmarks) {
     await t.step(benchmark.name, async () => {
       const deno = new Deno.Command("deno", {
