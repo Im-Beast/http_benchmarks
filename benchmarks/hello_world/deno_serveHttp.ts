@@ -11,7 +11,7 @@ if (import.meta.main) {
 }
 
 async function serveHttp(conn: Deno.Conn) {
-  for await (const req of Deno.serveHttp(conn)) {
-    req.respondWith(new Response(RESPONSE_MESSAGE));
+  for await (const event of Deno.serveHttp(conn)) {
+    event.respondWith(new Response(RESPONSE_MESSAGE));
   }
 }
