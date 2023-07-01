@@ -1,6 +1,6 @@
-# Name: Vixeny – Response 
-  ### Description: Using type: 'response'
-  ### Version: 0.0.6
+# Name: NHttp (flash) 
+  ### Description: NHttp with `flash` option set to `true`
+  ### Version: 1.2.22
   ### Deno version: 1.34.3
 
 ## Summary
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>135.00k</td>
-    <td>152.72k</td>
-    <td>16.07k</td>
-    <td>1.43 MiB</td>
-    <td>0.46</td>
-    <td>0.34</td>
-    <td>1.36</td>
+    <td>128.22k</td>
+    <td>147.67k</td>
+    <td>15.54k</td>
+    <td>1.34 MiB</td>
+    <td>0.49</td>
+    <td>0.32</td>
+    <td>1.09</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>152723.43k</td>
-  <td>152723.43k</td>
-  <td>152723.43k</td>
+  <td>104609.14k</td>
+  <td>104609.14k</td>
+  <td>104609.14k</td>
+  <td>104609.14k</td>
+  <td>147665.42k</td>
+  <td>147665.42k</td>
+  <td>147665.42k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.59</td>
-  <td>0.69</td>
-  <td>0.93</td>
+  <td>0.40</td>
+  <td>0.40</td>
+  <td>0.40</td>
+  <td>0.40</td>
+  <td>0.64</td>
+  <td>0.70</td>
+  <td>0.88</td>
 </tr>
 </table>

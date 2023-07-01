@@ -1,6 +1,6 @@
-# Name: Vixeny – Response 
-  ### Description: Using type: 'response'
-  ### Version: 0.0.6
+# Name: Acorn 
+  
+  ### Version: 0.3.0
   ### Deno version: 1.34.3
 
 ## Summary
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>135.00k</td>
-    <td>152.72k</td>
-    <td>16.07k</td>
-    <td>1.43 MiB</td>
-    <td>0.46</td>
-    <td>0.34</td>
-    <td>1.36</td>
+    <td>6.26k</td>
+    <td>45.91k</td>
+    <td>3.16k</td>
+    <td>0.06 MiB</td>
+    <td>11.21</td>
+    <td>3.96</td>
+    <td>22.74</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>152723.43k</td>
-  <td>152723.43k</td>
-  <td>152723.43k</td>
+  <td>4300.25k</td>
+  <td>4300.25k</td>
+  <td>4300.25k</td>
+  <td>4300.25k</td>
+  <td>11888.22k</td>
+  <td>14729.14k</td>
+  <td>15328.93k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.59</td>
-  <td>0.69</td>
-  <td>0.93</td>
+  <td>8.77</td>
+  <td>8.77</td>
+  <td>8.77</td>
+  <td>8.77</td>
+  <td>13.67</td>
+  <td>14.78</td>
+  <td>18.21</td>
 </tr>
 </table>

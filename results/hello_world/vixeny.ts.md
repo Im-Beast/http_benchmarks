@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>149.58k</td>
-    <td>159.63k</td>
-    <td>34.11k</td>
-    <td>1.29 MiB</td>
-    <td>0.56</td>
-    <td>0.35</td>
-    <td>2.93</td>
+    <td>132.12k</td>
+    <td>153.61k</td>
+    <td>29.33k</td>
+    <td>1.50 MiB</td>
+    <td>0.44</td>
+    <td>0.33</td>
+    <td>1.40</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>129012.22k</td>
-  <td>129012.22k</td>
-  <td>129012.22k</td>
-  <td>129012.22k</td>
-  <td>159629.68k</td>
-  <td>159629.68k</td>
-  <td>159629.68k</td>
+  <td>69444.10k</td>
+  <td>69444.10k</td>
+  <td>69444.10k</td>
+  <td>69444.10k</td>
+  <td>153607.71k</td>
+  <td>153607.71k</td>
+  <td>153607.71k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.40</td>
-  <td>0.40</td>
-  <td>0.40</td>
-  <td>0.40</td>
-  <td>0.78</td>
-  <td>0.92</td>
-  <td>2.05</td>
+  <td>0.38</td>
+  <td>0.38</td>
+  <td>0.38</td>
+  <td>0.38</td>
+  <td>0.54</td>
+  <td>0.61</td>
+  <td>0.74</td>
 </tr>
 </table>

@@ -1,6 +1,6 @@
-# Name: Vixeny – Response 
-  ### Description: Using type: 'response'
-  ### Version: 0.0.6
+# Name: Megalo 
+  
+  ### Version: 1.2.22
   ### Deno version: 1.34.3
 
 ## Summary
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>135.00k</td>
-    <td>152.72k</td>
-    <td>16.07k</td>
-    <td>1.43 MiB</td>
-    <td>0.46</td>
-    <td>0.34</td>
-    <td>1.36</td>
+    <td>76.05k</td>
+    <td>88.33k</td>
+    <td>10.03k</td>
+    <td>0.80 MiB</td>
+    <td>0.83</td>
+    <td>0.45</td>
+    <td>4.13</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>152723.43k</td>
-  <td>152723.43k</td>
-  <td>152723.43k</td>
+  <td>60718.73k</td>
+  <td>60718.73k</td>
+  <td>60718.73k</td>
+  <td>60718.73k</td>
+  <td>87192.03k</td>
+  <td>88330.25k</td>
+  <td>88330.25k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.59</td>
-  <td>0.69</td>
-  <td>0.93</td>
+  <td>0.65</td>
+  <td>0.65</td>
+  <td>0.65</td>
+  <td>0.65</td>
+  <td>1.03</td>
+  <td>1.37</td>
+  <td>2.33</td>
 </tr>
 </table>

@@ -1,6 +1,6 @@
-# Name: Vixeny – Response 
-  ### Description: Using type: 'response'
-  ### Version: 0.0.6
+# Name: Deno.serveHttp 
+  
+  ### Version: Deno 1.34.3
   ### Deno version: 1.34.3
 
 ## Summary
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>135.00k</td>
-    <td>152.72k</td>
-    <td>16.07k</td>
-    <td>1.43 MiB</td>
-    <td>0.46</td>
-    <td>0.34</td>
-    <td>1.36</td>
+    <td>97.91k</td>
+    <td>110.84k</td>
+    <td>10.04k</td>
+    <td>1.03 MiB</td>
+    <td>0.65</td>
+    <td>0.43</td>
+    <td>2.68</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>152723.43k</td>
-  <td>152723.43k</td>
-  <td>152723.43k</td>
+  <td>81927.80k</td>
+  <td>81927.80k</td>
+  <td>81927.80k</td>
+  <td>81927.80k</td>
+  <td>105501.81k</td>
+  <td>110837.55k</td>
+  <td>110837.55k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.59</td>
-  <td>0.69</td>
-  <td>0.93</td>
+  <td>0.55</td>
+  <td>0.55</td>
+  <td>0.55</td>
+  <td>0.55</td>
+  <td>0.77</td>
+  <td>0.86</td>
+  <td>1.54</td>
 </tr>
 </table>

@@ -1,6 +1,6 @@
-# Name: Vixeny – Response 
-  ### Description: Using type: 'response'
-  ### Version: 0.0.6
+# Name: Fastro (flash) 
+  
+  ### Version: 0.70.5
   ### Deno version: 1.34.3
 
 ## Summary
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>135.00k</td>
-    <td>152.72k</td>
-    <td>16.07k</td>
-    <td>1.43 MiB</td>
-    <td>0.46</td>
+    <td>129.00k</td>
+    <td>142.01k</td>
+    <td>13.51k</td>
+    <td>1.35 MiB</td>
+    <td>0.49</td>
     <td>0.34</td>
-    <td>1.36</td>
+    <td>1.21</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>104708.83k</td>
-  <td>152723.43k</td>
-  <td>152723.43k</td>
-  <td>152723.43k</td>
+  <td>113709.36k</td>
+  <td>113709.36k</td>
+  <td>113709.36k</td>
+  <td>113709.36k</td>
+  <td>142007.30k</td>
+  <td>142007.30k</td>
+  <td>142007.30k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.39</td>
-  <td>0.59</td>
-  <td>0.69</td>
-  <td>0.93</td>
+  <td>0.42</td>
+  <td>0.42</td>
+  <td>0.42</td>
+  <td>0.42</td>
+  <td>0.57</td>
+  <td>0.63</td>
+  <td>0.97</td>
 </tr>
 </table>
