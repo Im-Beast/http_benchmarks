@@ -4,7 +4,8 @@
     "exclude": ["results"]
   },
   "tasks": {
-    "bench": "deno run --allow-read --allow-write --allow-run --allow-net src/mod.ts"
+    "bench": "deno run --allow-read --allow-write --allow-run --allow-net src/mod.ts",
+    "test": "deno test --unstable -A"
   },
   "lock": false
 }

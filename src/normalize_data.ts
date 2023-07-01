@@ -25,7 +25,7 @@ export function meanNumericData(into: AnyObject, from: AnyObject[]): void {
 
   for (const key in properties) {
     const sorted = properties[key].sort((a, b) => a - b);
-    into[key] = sorted[Math.round(sorted.length / 2)];
+    into[key] = sorted[Math.round((sorted.length - 1) / 2)];
   }
 }
 
@@ -78,13 +78,16 @@ export function averageNumericData(a: AnyObject, b: AnyObject): void {
 }
 
 export function normalizeData(info: BenchmarkInfo, oha: OhaJsonOutput): BenchmarkResult {
+  const successRateByCode = (oha.statusCodeDistribution["200"] ?? 0) /
+    Object.values(oha.statusCodeDistribution).reduce((a, b) => a + b);
+
   return {
     name: info.name,
     description: info.description,
     version: info.version,
     path: info.path,
     fileName: info.fileName,
-    successRate: oha.summary.successRate,
+    successRate: Math.min(successRateByCode, oha.summary.successRate),
     steps: {},
     latency: {
       average: oha.summary.average * 1000,

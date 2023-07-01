@@ -1,4 +1,4 @@
-import { crayon } from "./deps.ts";
+import { crayon, normalize } from "./deps.ts";
 
 import { PROTOCOL_HTTP_URL_PORT } from "../benchmarks/SERVER_DATA.ts";
 import {
@@ -15,7 +15,7 @@ const textDecoder = new TextDecoder();
 
 export async function benchmarkFramework(
   info: BenchmarkInfo,
-  steps: [route: string, weight: number][],
+  steps: [method: string, route: string, weight: number][],
   trackSteps: boolean,
 ): Promise<BenchmarkResult> {
   const deno = new Deno.Command("deno", {
@@ -32,15 +32,15 @@ export async function benchmarkFramework(
   const routeOutputs: Record<string, BenchmarkResult> = {};
 
   let sumWeight = 0;
-  for (const [route, weight] of steps) {
+  for (const [method, route, weight] of steps) {
     sumWeight += weight;
 
-    const testedUrl = `${PROTOCOL_HTTP_URL_PORT}/${route}`;
+    const testedUrl = PROTOCOL_HTTP_URL_PORT.slice(0, -1) + normalize(`/${route}`);
 
     const results: BenchmarkResult[] = [];
     for (let i = 0; i < 3; ++i) {
       const oha = new Deno.Command("oha", {
-        args: [testedUrl, "-n", "10000", "-c", "64", "-j", "--no-tui"], // 25k requests | 64 concurrent workers | return as json | don't run tui
+        args: [testedUrl, "-m", method, "-n", "9984", "-c", "64", "-j", "--no-tui"], // {method} method | 6.4k requests | 64 concurrent workers | return as json | don't run tui
         stdin: "null",
         stderr: "piped",
         stdout: "piped",
@@ -59,8 +59,16 @@ export async function benchmarkFramework(
     meanNumericData(result, results);
 
     if (result.successRate !== 1) {
+      try {
+        denoSubprocess.kill();
+      } catch {
+        console.log(crayon.yellow("==== Start of subprocess stderr ====="));
+        await denoSubprocess.stderr.pipeTo(Deno.stdout.writable, { preventCancel: true });
+        console.log(crayon.yellow("====  End of subprocess stderr  ====="));
+      }
+
       throw new Error(
-        `${info.name} didn't achieve 100% success rate, instead achieved ${result.successRate} at ${route} route (${testedUrl})`,
+        `${info.fileName} didn't achieve 100% success rate, instead achieved ${result.successRate} at ${route} route (${testedUrl})`,
       );
     }
 
@@ -75,7 +83,7 @@ export async function benchmarkFramework(
 
     if (trackSteps) {
       benchmarkerOutput.steps ??= {};
-      benchmarkerOutput.steps[route] = output;
+      benchmarkerOutput.steps[route] = structuredClone(output);
     }
   }
   divideNumericData(benchmarkerOutput!, sumWeight);
@@ -84,7 +92,7 @@ export async function benchmarkFramework(
     denoSubprocess.kill();
   } catch (error) {
     console.log(crayon.yellow("==== Start of subprocess stderr ====="));
-    await denoSubprocess.stderr.pipeTo(Deno.stderr.writable);
+    await denoSubprocess.stderr.pipeTo(Deno.stdout.writable, { preventCancel: true });
     console.log(crayon.yellow("====  End of subprocess stderr  ====="));
     throw error;
   }

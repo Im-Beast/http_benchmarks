@@ -4,10 +4,11 @@
 
 Check benchmarks here:
 
-|                      Name                      |                                   Description                                   |
-| :--------------------------------------------: | :-----------------------------------------------------------------------------: |
-| [Hello world](./results/hello_world/README.md) |                Server responds with simple `"hello world"` text                 |
-| [File server](./results/file_server/README.md) | Static file server, where server needs to respond with files in given directory |
+|                          Name                          | Description                                                                                                                                                                                                                                                                                                                      |
+| :----------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     [Hello world](./results/hello_world/README.md)     | Server responds with simple `"hello world"` text                                                                                                                                                                                                                                                                                 |
+|     [File server](./results/file_server/README.md)     | Static file server, where server needs to respond with files in given directory                                                                                                                                                                                                                                                  |
+| [Multiple routes](./results/multiple_routes/README.md) | Server with multiple routes: <ul> <li> `/hello_world (GET)` – returns `"hello world"`</li> <li> `/random_number (GET)` – returns random number from 0 to 1</li> <li> `plus_1 (POST)` – adds 1 to the counter </li><li> `minus_1 (POST)` – subtracts 1 from the counter </li><li> `count (GET)` – return counter value</li> </ul> |
 
 More benchmarks are planned! <br> However if you have an idea for real-world scenario that frameworks speed should be
 tested for, please create an issue about it!
