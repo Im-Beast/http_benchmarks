@@ -150,15 +150,15 @@
 </tr>
 <tr>
     <td><a href="./danet.ts.md">Danet</a></td>
-    <td>22.08%</td>
-    <td>21.85%</td>
-    <td>26.84k</td>
-    <td>31.36k</td>
-    <td>3.03k</td>
-    <td>0.47 MiB</td>
-    <td>2.36</td>
-    <td>1.08</td>
-    <td>6.33</td>
+    <td>23.45%</td>
+    <td>23.10%</td>
+    <td>28.51k</td>
+    <td>31.61k</td>
+    <td>2.77k</td>
+    <td>0.50 MiB</td>
+    <td>2.23</td>
+    <td>1.33</td>
+    <td>6.00</td>
 </tr>
 <tr>
     <td><a href="./opine.ts.md">Opine</a></td>
