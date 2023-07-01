@@ -83,7 +83,7 @@ export async function benchmarkFramework(
 
     if (trackSteps) {
       benchmarkerOutput.steps ??= {};
-      benchmarkerOutput.steps[route] = output;
+      benchmarkerOutput.steps[route] = structuredClone(output);
     }
   }
   divideNumericData(benchmarkerOutput!, sumWeight);
