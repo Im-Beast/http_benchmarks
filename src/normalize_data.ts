@@ -1,24 +1,80 @@
 import { BenchmarkInfo, BenchmarkResult, OhaJsonOutput } from "./types.ts";
 
 // deno-lint-ignore no-explicit-any
-function averageObject(a: any, b: any): void {
-  for (const key in a) {
-    const aValue = a[key];
-    const bValue = b[key];
+export type AnyObject = Record<any, any>;
+export type NumericData = [object: AnyObject, weight: number];
 
-    if (typeof aValue !== typeof bValue) {
-      continue;
-    } else if (typeof aValue === "object") {
-      averageObject(aValue, bValue);
-    } else if (typeof aValue === "number") {
-      a[key] = (aValue + bValue) / 2;
+export function meanNumericData(into: AnyObject, from: AnyObject[]): void {
+  const properties: Record<string, number[]> = {};
+
+  for (const object of from) {
+    for (const key in object) {
+      if (typeof object[key] === "object") {
+        into[key] ??= {};
+        meanNumericData(into[key], from.map((object) => object[key]));
+        continue;
+      } else if (typeof object[key] !== "number") {
+        into[key] = object[key];
+        continue;
+      }
+
+      properties[key] ??= [];
+      properties[key].push(object[key]);
+    }
+  }
+
+  for (const key in properties) {
+    const sorted = properties[key].sort((a, b) => a - b);
+    into[key] = sorted[Math.round(sorted.length / 2)];
+  }
+}
+
+export function sumNumericObjects(into: AnyObject, from: AnyObject): void {
+  for (const key in from) {
+    const aValue = into[key];
+    const bValue = from[key];
+
+    if (typeof aValue === "number" && typeof bValue === "number") {
+      into[key] = aValue + bValue;
+    } else if (aValue === undefined) {
+      into[key] = bValue;
     }
   }
 }
 
-export function averageBenchmarkerData(a: BenchmarkResult, b: BenchmarkResult): BenchmarkResult {
-  averageObject(a, b);
-  return a;
+export function divideNumericData(object: AnyObject, divider: number): void {
+  for (const key in object) {
+    const aValue = object[key];
+
+    if (typeof aValue === "number") {
+      object[key] = aValue / divider;
+    }
+  }
+}
+
+export function multiplyNumericData(object: AnyObject, multiplier: number): void {
+  for (const key in object) {
+    const aValue = object[key];
+
+    if (typeof aValue === "number") {
+      object[key] = aValue * multiplier;
+    }
+  }
+}
+
+export function averageNumericData(a: AnyObject, b: AnyObject): void {
+  for (const key in a) {
+    const aValue = a[key];
+    const bValue = b[key];
+
+    if (typeof aValue === "number" && typeof bValue === "number") {
+      a[key] = (aValue + bValue) / 2;
+    } else if (typeof aValue === "object" && typeof bValue === "object") {
+      a[key] = averageNumericData(aValue, bValue);
+    } else {
+      a[key] = aValue;
+    }
+  }
 }
 
 export function normalizeData(info: BenchmarkInfo, oha: OhaJsonOutput): BenchmarkResult {

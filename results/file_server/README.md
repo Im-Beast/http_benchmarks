@@ -19,85 +19,97 @@
 </tr><tr>
     <td><a href="./hono.ts.md">Hono</a></td>
     <td>100.00%</td>
-    <td>92.04%</td>
-    <td>20.45k</td>
-    <td>23.57k</td>
-    <td>1.83k</td>
-    <td>616.14 MiB</td>
-    <td>11.36</td>
-    <td>2.67</td>
-    <td>24.68</td>
-</tr>
-<tr>
-    <td><a href="./deno_serve_http.ts.md">Deno.serveHttp</a></td>
-    <td>73.33%</td>
-    <td>25.29%</td>
-    <td>15.00k</td>
-    <td>25148.52k</td>
-    <td>577.73k</td>
-    <td>283.27 MiB</td>
-    <td>41.36</td>
-    <td>4.97</td>
-    <td>47.79</td>
+    <td>100.00%</td>
+    <td>11.67k</td>
+    <td>13.69k</td>
+    <td>2.07k</td>
+    <td>61.65 MiB</td>
+    <td>5.92</td>
+    <td>3.96</td>
+    <td>16.70</td>
 </tr>
 <tr>
     <td><a href="./aqua.ts.md">Aqua</a></td>
-    <td>53.69%</td>
-    <td>100.00%</td>
-    <td>10.98k</td>
-    <td>16.09k</td>
-    <td>2.01k</td>
-    <td>725.65 MiB</td>
-    <td>10.46</td>
-    <td>5.07</td>
-    <td>25.43</td>
+    <td>85.50%</td>
+    <td>86.40%</td>
+    <td>9.97k</td>
+    <td>12.69k</td>
+    <td>1.71k</td>
+    <td>52.85 MiB</td>
+    <td>6.85</td>
+    <td>3.91</td>
+    <td>14.89</td>
 </tr>
 <tr>
     <td><a href="./danet.ts.md">Danet</a></td>
-    <td>20.87%</td>
-    <td>37.42%</td>
-    <td>4.27k</td>
-    <td>11.01k</td>
-    <td>1.28k</td>
-    <td>262.23 MiB</td>
-    <td>27.95</td>
-    <td>6.50</td>
-    <td>160.94</td>
+    <td>40.95%</td>
+    <td>40.11%</td>
+    <td>4.78k</td>
+    <td>30.65k</td>
+    <td>2.69k</td>
+    <td>25.12 MiB</td>
+    <td>14.76</td>
+    <td>8.11</td>
+    <td>26.47</td>
 </tr>
 <tr>
     <td><a href="./oak.ts.md">Oak</a></td>
-    <td>19.20%</td>
-    <td>37.93%</td>
-    <td>3.93k</td>
-    <td>13.45k</td>
-    <td>1.32k</td>
-    <td>271.33 MiB</td>
-    <td>27.58</td>
-    <td>6.18</td>
-    <td>156.12</td>
+    <td>40.45%</td>
+    <td>40.63%</td>
+    <td>4.72k</td>
+    <td>19.76k</td>
+    <td>2.21k</td>
+    <td>24.80 MiB</td>
+    <td>14.58</td>
+    <td>8.69</td>
+    <td>27.17</td>
 </tr>
 <tr>
-    <td><a href="./deno_std_serve.ts.md">std serve serveDir</a></td>
-    <td>9.08%</td>
-    <td>24.59%</td>
-    <td>1.86k</td>
-    <td>193.63k</td>
-    <td>5.89k</td>
-    <td>269.85 MiB</td>
-    <td>42.52</td>
-    <td>0.33</td>
-    <td>55.29</td>
+    <td><a href="./deno_serve_custom.ts.md">Deno.serve + custom response</a></td>
+    <td>33.81%</td>
+    <td>14.39%</td>
+    <td>3.94k</td>
+    <td>514.47k</td>
+    <td>28.35k</td>
+    <td>8.22 MiB</td>
+    <td>41.14</td>
+    <td>14.27</td>
+    <td>46.01</td>
 </tr>
 <tr>
     <td><a href="./deno_serve.ts.md">Deno.serve + serveDir from std</a></td>
-    <td>7.99%</td>
-    <td>25.97%</td>
-    <td>1.63k</td>
-    <td>24.79k</td>
-    <td>1.11k</td>
-    <td>301.00 MiB</td>
-    <td>40.27</td>
-    <td>0.30</td>
-    <td>51.85</td>
+    <td>18.23%</td>
+    <td>14.29%</td>
+    <td>2.13k</td>
+    <td>344.12k</td>
+    <td>12.75k</td>
+    <td>8.18 MiB</td>
+    <td>41.45</td>
+    <td>12.26</td>
+    <td>52.12</td>
+</tr>
+<tr>
+    <td><a href="./deno_serve_http.ts.md">Deno.serveHttp</a></td>
+    <td>17.26%</td>
+    <td>14.32%</td>
+    <td>2.01k</td>
+    <td>271.78k</td>
+    <td>10.01k</td>
+    <td>5.12 MiB</td>
+    <td>41.37</td>
+    <td>10.69</td>
+    <td>47.03</td>
+</tr>
+<tr>
+    <td><a href="./deno_std_serve.ts.md">std serve serveDir</a></td>
+    <td>15.45%</td>
+    <td>14.22%</td>
+    <td>1.80k</td>
+    <td>181.48k</td>
+    <td>6.68k</td>
+    <td>5.10 MiB</td>
+    <td>41.65</td>
+    <td>13.29</td>
+    <td>67.67</td>
 </tr>
 </table>
