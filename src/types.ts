@@ -41,7 +41,7 @@ export interface OhaJsonOutput {
     DNSLookup: { average: number; fastest: number; slowest: number };
   };
   statusCodeDistribution: {
-    "200": number;
+    [code: number]: number;
   };
   errorDistribution: {
     [code: number]: number;
