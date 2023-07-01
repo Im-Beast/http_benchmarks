@@ -34,7 +34,7 @@ if (import.meta.main) {
 
     @Get(MULTIPLE_ROUTES.COUNT)
     count() {
-      return `${this.count}`;
+      return `${this.counter}`;
     }
   }
 
