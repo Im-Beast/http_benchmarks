@@ -25,7 +25,7 @@ export function meanNumericData(into: AnyObject, from: AnyObject[]): void {
 
   for (const key in properties) {
     const sorted = properties[key].sort((a, b) => a - b);
-    into[key] = sorted[Math.round(sorted.length / 2)];
+    into[key] = sorted[Math.round((sorted.length - 1) / 2)];
   }
 }
 
