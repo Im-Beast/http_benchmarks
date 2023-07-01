@@ -1,7 +1,7 @@
 import fastro from "https://deno.land/x/fastro@v0.70.5/server/mod.ts";
 import { HTTP_PORT, HTTP_URL, MULTIPLE_ROUTES, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
 
-export const NAME = "Fastro";
+export const NAME = "Fastro (flash)";
 export const DESCRIPTION = "";
 export const VERSION = "0.70.5";
 
