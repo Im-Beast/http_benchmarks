@@ -7,7 +7,7 @@ export const VERSION = "0.0.6";
 
 if (import.meta.main) {
   await Deno.serve(
-    vixeny({ hasName: PROTOCOL_HTTP_URL_PORT })([
+    vixeny({ hasName: PROTOCOL_HTTP_URL_PORT + "/" })([
       {
         path: "/",
         f: () => RESPONSE_MESSAGE,
