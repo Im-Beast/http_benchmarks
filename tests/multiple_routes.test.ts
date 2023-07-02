@@ -32,7 +32,7 @@ async function post(url: string): Promise<string> {
 
 Deno.test("multiple_routes", async (t) => {
   for (const benchmark of benchmarks) {
-    await t.step(benchmark.name, async () => {
+    await t.step(benchmark.name, async (t) => {
       const deno = new Deno.Command("deno", {
         args: ["run", "--unstable", "--allow-read", "--allow-net", "--allow-env", benchmark.path],
         stdin: "null",
@@ -44,22 +44,32 @@ Deno.test("multiple_routes", async (t) => {
       // wait for a second so deno can fully start
       await new Promise((r) => setTimeout(r, 1000));
 
-      for (let i = 0; i < 10; ++i) {
-        for (let j = 0; j < 5; ++j) {
+      await t.step("/plus_1 + /count", async () => {
+        for (let j = 0; j < 15; ++j) {
           assertEquals(await get(routes["/count"]), `${j}`);
           assertEquals(await post(routes["/plus_1"]), "ok");
         }
+      });
 
-        for (let j = 5; j > 0; --j) {
+      await t.step("/minus_1 + /count", async () => {
+        for (let j = 15; j > 0; --j) {
           assertEquals(await get(routes["/count"]), `${j}`);
           assertEquals(await post(routes["/minus_1"]), "ok");
         }
+      });
 
-        const number = +(await get(routes["/random_number"]));
-        assert(number > 0 && number < 1);
+      await t.step("/random_number", async () => {
+        for (let i = 0; i < 10; ++i) {
+          const number = +(await get(routes["/random_number"]));
+          assert(number > 0 && number < 1);
+        }
+      });
 
-        assertEquals(await get(routes["/hello_world"]), RESPONSE_MESSAGE);
-      }
+      await t.step("/hello_world", async () => {
+        for (let i = 0; i < 10; ++i) {
+          assertEquals(await get(routes["/hello_world"]), RESPONSE_MESSAGE);
+        }
+      });
 
       denoSubprocess.kill();
       await denoSubprocess.output();
