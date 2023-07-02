@@ -1,9 +1,9 @@
-import { Hono } from "https://deno.land/x/hono@v3.2.6/mod.ts";
+import { Hono } from "https://deno.land/x/hono@v3.2.7/mod.ts";
 import { HTTP_PORT, HTTP_URL, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
 
 export const NAME = "Hono";
 export const DESCRIPTION = "";
-export const VERSION = "3.2.6";
+export const VERSION = "3.2.7";
 
 if (import.meta.main) {
   const app = new Hono();
