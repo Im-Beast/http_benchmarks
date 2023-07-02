@@ -41,6 +41,18 @@
     <td>2.09</td>
 </tr>
 <tr>
+    <td><a href="./hono.ts.md">Hono</a></td>
+    <td>98.31%</td>
+    <td>97.69%</td>
+    <td>119.50k</td>
+    <td>134.33k</td>
+    <td>14.23k</td>
+    <td>2.09 MiB</td>
+    <td>0.53</td>
+    <td>0.39</td>
+    <td>2.96</td>
+</tr>
+<tr>
     <td><a href="./deno_serve.ts.md">Deno.serve</a></td>
     <td>94.14%</td>
     <td>92.87%</td>
@@ -51,18 +63,6 @@
     <td>0.55</td>
     <td>0.41</td>
     <td>2.61</td>
-</tr>
-<tr>
-    <td><a href="./hono.ts.md">Hono</a></td>
-    <td>89.42%</td>
-    <td>87.80%</td>
-    <td>108.69k</td>
-    <td>122.25k</td>
-    <td>13.72k</td>
-    <td>1.88 MiB</td>
-    <td>0.59</td>
-    <td>0.40</td>
-    <td>3.18</td>
 </tr>
 <tr>
     <td><a href="./nhttp.ts.md">NHttp</a></td>
@@ -138,15 +138,15 @@
 </tr>
 <tr>
     <td><a href="./oak.ts.md">Oak</a></td>
-    <td>29.91%</td>
-    <td>29.37%</td>
-    <td>36.36k</td>
-    <td>41.20k</td>
-    <td>3.68k</td>
-    <td>0.63 MiB</td>
-    <td>1.75</td>
-    <td>0.73</td>
-    <td>4.65</td>
+    <td>30.62%</td>
+    <td>30.12%</td>
+    <td>37.22k</td>
+    <td>40.25k</td>
+    <td>4.28k</td>
+    <td>0.65 MiB</td>
+    <td>1.71</td>
+    <td>0.93</td>
+    <td>4.91</td>
 </tr>
 <tr>
     <td><a href="./danet.ts.md">Danet</a></td>
