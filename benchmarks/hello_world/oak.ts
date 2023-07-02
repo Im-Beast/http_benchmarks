@@ -1,9 +1,9 @@
-import { Application } from "https://deno.land/x/oak@v11.1.0/mod.ts";
+import { Application } from "https://deno.land/x/oak@v12.5.0/mod.ts";
 import { HTTP_PORT, HTTP_URL, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
 
 export const NAME = "Oak";
 export const DESCRIPTION = "";
-export const VERSION = "11.1.0";
+export const VERSION = "12.5.0";
 
 if (import.meta.main) {
   const app = new Application();
