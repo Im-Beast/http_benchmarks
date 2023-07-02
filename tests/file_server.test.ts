@@ -20,7 +20,7 @@ for (const [_, fileName] of FILE_SERVER_STEPS) {
 
 Deno.test("file_server", async (t) => {
   for (const benchmark of benchmarks) {
-    await t.step(benchmark.name, async () => {
+    await t.step(benchmark.name, async (t) => {
       const deno = new Deno.Command("deno", {
         args: ["run", "--unstable", "--allow-read", "--allow-net", "--allow-env", benchmark.path],
         stdin: "null",
@@ -33,15 +33,17 @@ Deno.test("file_server", async (t) => {
       await new Promise((r) => setTimeout(r, 1000));
 
       for (const fileName in fileData) {
-        const route = `${PROTOCOL_HTTP_URL_PORT}${fileName}`;
-        const readyBuffer = fileData[fileName];
+        await t.step(fileName, async () => {
+          const route = `${PROTOCOL_HTTP_URL_PORT}${fileName}`;
+          const readyBuffer = fileData[fileName];
 
-        for (let i = 0; i < 10; ++i) {
-          const response = await fetch(route);
-          const buffer = new Uint8Array(await response.arrayBuffer());
+          for (let i = 0; i < 10; ++i) {
+            const response = await fetch(route);
+            const buffer = new Uint8Array(await response.arrayBuffer());
 
-          assertEquals(buffer, readyBuffer);
-        }
+            assertEquals(buffer, readyBuffer);
+          }
+        });
       }
 
       denoSubprocess.kill();
