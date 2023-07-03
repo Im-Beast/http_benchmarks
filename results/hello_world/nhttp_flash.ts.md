@@ -1,6 +1,6 @@
 # Name: NHttp (flash) 
   ### Description: NHttp with `flash` option set to `true`
-  ### Version: 1.2.22
+  ### Version: 1.2.23
   ### Deno version: 1.34.3
 
 ## Summary
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>128.22k</td>
-    <td>147.67k</td>
-    <td>15.54k</td>
-    <td>1.34 MiB</td>
-    <td>0.49</td>
-    <td>0.32</td>
-    <td>1.09</td>
+    <td>147.18k</td>
+    <td>156.92k</td>
+    <td>10.88k</td>
+    <td>1.54 MiB</td>
+    <td>0.43</td>
+    <td>0.33</td>
+    <td>1.33</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>104609.14k</td>
-  <td>104609.14k</td>
-  <td>104609.14k</td>
-  <td>104609.14k</td>
-  <td>147665.42k</td>
-  <td>147665.42k</td>
-  <td>147665.42k</td>
+  <td>130611.09k</td>
+  <td>130611.09k</td>
+  <td>130611.09k</td>
+  <td>130611.09k</td>
+  <td>156918.20k</td>
+  <td>156918.20k</td>
+  <td>156918.20k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.40</td>
-  <td>0.40</td>
-  <td>0.40</td>
-  <td>0.40</td>
-  <td>0.64</td>
-  <td>0.70</td>
-  <td>0.88</td>
+  <td>0.38</td>
+  <td>0.38</td>
+  <td>0.38</td>
+  <td>0.38</td>
+  <td>0.49</td>
+  <td>0.52</td>
+  <td>0.58</td>
 </tr>
 </table>
