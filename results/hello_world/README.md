@@ -53,6 +53,18 @@
     <td>1.23</td>
 </tr>
 <tr>
+    <td><a href="./nhttp_flash.ts.md">NHttp (flash)</a></td>
+    <td>93.17%</td>
+    <td>90.60%</td>
+    <td>147.18k</td>
+    <td>156.92k</td>
+    <td>10.88k</td>
+    <td>1.54 MiB</td>
+    <td>0.43</td>
+    <td>0.33</td>
+    <td>1.33</td>
+</tr>
+<tr>
     <td><a href="./fastro_flash.ts.md">Fastro (flash)</a></td>
     <td>81.65%</td>
     <td>79.64%</td>
@@ -63,18 +75,6 @@
     <td>0.49</td>
     <td>0.34</td>
     <td>1.21</td>
-</tr>
-<tr>
-    <td><a href="./nhttp_flash.ts.md">NHttp (flash)</a></td>
-    <td>81.16%</td>
-    <td>78.99%</td>
-    <td>128.22k</td>
-    <td>147.67k</td>
-    <td>15.54k</td>
-    <td>1.34 MiB</td>
-    <td>0.49</td>
-    <td>0.32</td>
-    <td>1.09</td>
 </tr>
 <tr>
     <td><a href="./hono.ts.md">Hono</a></td>
@@ -101,6 +101,18 @@
     <td>2.68</td>
 </tr>
 <tr>
+    <td><a href="./nhttp.ts.md">NHttp</a></td>
+    <td>55.34%</td>
+    <td>53.60%</td>
+    <td>87.42k</td>
+    <td>102.65k</td>
+    <td>13.63k</td>
+    <td>0.91 MiB</td>
+    <td>0.73</td>
+    <td>0.50</td>
+    <td>3.16</td>
+</tr>
+<tr>
     <td><a href="./deno_std_serve.ts.md">std serve</a></td>
     <td>52.96%</td>
     <td>51.04%</td>
@@ -123,18 +135,6 @@
     <td>0.76</td>
     <td>0.38</td>
     <td>3.35</td>
-</tr>
-<tr>
-    <td><a href="./nhttp.ts.md">NHttp</a></td>
-    <td>51.89%</td>
-    <td>50.66%</td>
-    <td>81.98k</td>
-    <td>100.60k</td>
-    <td>10.69k</td>
-    <td>0.86 MiB</td>
-    <td>0.77</td>
-    <td>0.54</td>
-    <td>3.77</td>
 </tr>
 <tr>
     <td><a href="./cheetah.ts.md">Cheetah</a></td>
@@ -174,15 +174,15 @@
 </tr>
 <tr>
     <td><a href="./danet.ts.md">Danet</a></td>
-    <td>18.72%</td>
-    <td>18.07%</td>
-    <td>29.58k</td>
-    <td>33.70k</td>
-    <td>8.76k</td>
-    <td>0.31 MiB</td>
-    <td>2.16</td>
-    <td>0.99</td>
-    <td>6.86</td>
+    <td>17.15%</td>
+    <td>16.62%</td>
+    <td>27.10k</td>
+    <td>31.76k</td>
+    <td>3.16k</td>
+    <td>0.28 MiB</td>
+    <td>2.35</td>
+    <td>0.93</td>
+    <td>6.92</td>
 </tr>
 <tr>
     <td><a href="./opine.ts.md">Opine</a></td>

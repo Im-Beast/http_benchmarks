@@ -54,15 +54,15 @@
 </tr>
 <tr>
     <td><a href="./danet.ts.md">Danet</a></td>
-    <td>37.08%</td>
-    <td>36.78%</td>
-    <td>4.48k</td>
-    <td>9.46k</td>
-    <td>1.69k</td>
-    <td>23.58 MiB</td>
-    <td>14.33</td>
-    <td>7.84</td>
-    <td>25.67</td>
+    <td>37.73%</td>
+    <td>37.16%</td>
+    <td>4.56k</td>
+    <td>11.22k</td>
+    <td>1.64k</td>
+    <td>23.83 MiB</td>
+    <td>14.19</td>
+    <td>7.26</td>
+    <td>23.67</td>
 </tr>
 <tr>
     <td><a href="./deno_serve.ts.md">Deno.serve</a></td>
