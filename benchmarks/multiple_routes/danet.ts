@@ -1,9 +1,9 @@
-import { Controller, DanetApplication, Get, Module, Post } from "https://deno.land/x/danet@1.7.4/mod.ts";
+import { Controller, DanetApplication, Get, Module, Post } from "https://deno.land/x/danet@1.8.0/mod.ts";
 import { HTTP_PORT, MULTIPLE_ROUTES, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
 
 export const NAME = "Danet";
 export const DESCRIPTION = "";
-export const VERSION = "1.7.4";
+export const VERSION = "1.8.0";
 
 if (import.meta.main) {
   @Controller()
