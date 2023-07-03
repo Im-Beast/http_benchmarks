@@ -4,6 +4,7 @@
     "exclude": ["results"]
   },
   "tasks": {
+    "raw-bench": "rm results/cache.json && deno task bench",
     "bench": "deno run --allow-read --allow-write --allow-run --allow-net src/mod.ts",
     "test": "deno test --unstable -A"
   },
