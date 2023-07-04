@@ -6,9 +6,10 @@ export const NAME = "std serve + serveDir";
 export const DESCRIPTION = "";
 export const VERSION = "0.192.0";
 
+const opts = {
+  fsRoot: FILE_SERVER_PATH,
+};
+
 if (import.meta.main) {
-  await serve((request) =>
-    serveDir(request, {
-      fsRoot: FILE_SERVER_PATH,
-    }), { hostname: HTTP_URL, port: HTTP_PORT });
+  await serve((request) => serveDir(request, opts), { hostname: HTTP_URL, port: HTTP_PORT });
 }
