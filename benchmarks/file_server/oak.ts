@@ -5,14 +5,16 @@ export const NAME = "Oak";
 export const DESCRIPTION = "";
 export const VERSION = "12.5.0";
 
+const opts = {
+  root: FILE_SERVER_PATH,
+};
+
 if (import.meta.main) {
   const app = new Application();
 
   app.use(async (context, next) => {
     try {
-      await context.send({
-        root: FILE_SERVER_PATH,
-      });
+      await context.send(opts);
     } catch {
       await next();
     }
