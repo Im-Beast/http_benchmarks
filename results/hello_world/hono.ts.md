@@ -1,7 +1,7 @@
 # Name: Hono 
   
   ### Version: 3.2.7
-  ### Deno version: 1.34.3
+  ### Deno version: 1.35.0
 
 ## Summary
 <table>
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>127.49k</td>
-    <td>137.70k</td>
-    <td>12.96k</td>
-    <td>1.34 MiB</td>
-    <td>0.50</td>
-    <td>0.37</td>
-    <td>2.80</td>
+    <td>119.21k</td>
+    <td>130.51k</td>
+    <td>10.31k</td>
+    <td>1.25 MiB</td>
+    <td>0.53</td>
+    <td>0.39</td>
+    <td>3.02</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>108998.15k</td>
-  <td>108998.15k</td>
-  <td>108998.15k</td>
-  <td>108998.15k</td>
-  <td>137698.61k</td>
-  <td>137698.61k</td>
-  <td>137698.61k</td>
+  <td>104134.10k</td>
+  <td>104134.10k</td>
+  <td>104134.10k</td>
+  <td>104134.10k</td>
+  <td>130508.03k</td>
+  <td>130508.03k</td>
+  <td>130508.03k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.42</td>
-  <td>0.42</td>
-  <td>0.42</td>
-  <td>0.42</td>
-  <td>0.54</td>
-  <td>0.75</td>
-  <td>1.05</td>
+  <td>0.43</td>
+  <td>0.43</td>
+  <td>0.43</td>
+  <td>0.43</td>
+  <td>0.63</td>
+  <td>0.82</td>
+  <td>1.46</td>
 </tr>
 </table>

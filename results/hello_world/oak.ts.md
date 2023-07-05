@@ -1,7 +1,7 @@
 # Name: Oak 
   
   ### Version: 12.5.0
-  ### Deno version: 1.34.3
+  ### Deno version: 1.35.0
 
 ## Summary
 <table>
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>45.49k</td>
-    <td>50.92k</td>
-    <td>3.54k</td>
-    <td>0.48 MiB</td>
-    <td>1.40</td>
-    <td>0.73</td>
-    <td>3.88</td>
+    <td>43.73k</td>
+    <td>48.80k</td>
+    <td>3.53k</td>
+    <td>0.46 MiB</td>
+    <td>1.46</td>
+    <td>0.62</td>
+    <td>4.66</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>42295.69k</td>
-  <td>42295.69k</td>
-  <td>42295.69k</td>
-  <td>42295.69k</td>
-  <td>48819.43k</td>
-  <td>50399.75k</td>
-  <td>50916.16k</td>
+  <td>39803.56k</td>
+  <td>39803.56k</td>
+  <td>39803.56k</td>
+  <td>39803.56k</td>
+  <td>47274.85k</td>
+  <td>48244.30k</td>
+  <td>48796.66k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>1.17</td>
-  <td>1.17</td>
-  <td>1.17</td>
-  <td>1.17</td>
-  <td>1.76</td>
-  <td>1.90</td>
-  <td>2.47</td>
+  <td>1.19</td>
+  <td>1.19</td>
+  <td>1.19</td>
+  <td>1.19</td>
+  <td>1.80</td>
+  <td>1.93</td>
+  <td>2.81</td>
 </tr>
 </table>

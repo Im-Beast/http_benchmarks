@@ -1,7 +1,7 @@
 # Name: Acorn 
   
   ### Version: 0.3.0
-  ### Deno version: 1.34.3
+  ### Deno version: 1.35.0
 
 ## Summary
 <table>
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>6.26k</td>
-    <td>45.91k</td>
-    <td>3.16k</td>
-    <td>0.06 MiB</td>
-    <td>11.21</td>
-    <td>3.96</td>
-    <td>22.74</td>
+    <td>6.37k</td>
+    <td>18.92k</td>
+    <td>3.21k</td>
+    <td>0.07 MiB</td>
+    <td>10.05</td>
+    <td>4.98</td>
+    <td>18.29</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>4300.25k</td>
-  <td>4300.25k</td>
-  <td>4300.25k</td>
-  <td>4300.25k</td>
-  <td>11888.22k</td>
-  <td>14729.14k</td>
-  <td>15328.93k</td>
+  <td>5068.47k</td>
+  <td>5068.47k</td>
+  <td>5068.47k</td>
+  <td>5068.47k</td>
+  <td>7806.88k</td>
+  <td>9393.08k</td>
+  <td>18922.78k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>8.77</td>
-  <td>8.77</td>
-  <td>8.77</td>
-  <td>8.77</td>
-  <td>13.67</td>
-  <td>14.78</td>
-  <td>18.21</td>
+  <td>7.89</td>
+  <td>7.89</td>
+  <td>7.89</td>
+  <td>7.89</td>
+  <td>12.19</td>
+  <td>13.51</td>
+  <td>15.64</td>
 </tr>
 </table>
