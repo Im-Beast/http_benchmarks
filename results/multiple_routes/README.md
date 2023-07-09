@@ -42,15 +42,15 @@
 </tr>
 <tr>
     <td><a href="./hydra.ts.md">Hydra</a></td>
-    <td>97.73%</td>
-    <td>98.31%</td>
-    <td>135.78k</td>
-    <td>144.11k</td>
-    <td>8.63k</td>
-    <td>2.38 MiB</td>
-    <td>0.46</td>
-    <td>0.37</td>
-    <td>1.17</td>
+    <td>96.15%</td>
+    <td>96.01%</td>
+    <td>133.59k</td>
+    <td>139.76k</td>
+    <td>25.15k</td>
+    <td>2.33 MiB</td>
+    <td>0.47</td>
+    <td>0.38</td>
+    <td>1.09</td>
 </tr>
 <tr>
     <td><a href="./fastro_flash.ts.md">Fastro (flash)</a></td>

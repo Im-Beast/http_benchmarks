@@ -3,7 +3,7 @@ import { HTTP_PORT, HTTP_URL, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
 
 export const NAME = "Hydra";
 export const DESCRIPTION = "";
-export const VERSION = "0.2.0";
+export const VERSION = "0.1.0";
 
 if (import.meta.main) {
   const app = new Hydra(HTTP_URL, HTTP_PORT);

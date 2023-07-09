@@ -53,6 +53,18 @@
     <td>1.14</td>
 </tr>
 <tr>
+    <td><a href="./hydra.ts.md">Hydra</a></td>
+    <td>86.85%</td>
+    <td>86.55%</td>
+    <td>145.19k</td>
+    <td>151.22k</td>
+    <td>9.40k</td>
+    <td>1.52 MiB</td>
+    <td>0.43</td>
+    <td>0.36</td>
+    <td>1.41</td>
+</tr>
+<tr>
     <td><a href="./nhttp_flash.ts.md">NHttp (flash)</a></td>
     <td>86.73%</td>
     <td>86.30%</td>
@@ -75,18 +87,6 @@
     <td>0.44</td>
     <td>0.35</td>
     <td>1.19</td>
-</tr>
-<tr>
-    <td><a href="./hydra.ts.md">Hydra</a></td>
-    <td>86.02%</td>
-    <td>85.65%</td>
-    <td>143.81k</td>
-    <td>151.28k</td>
-    <td>9.46k</td>
-    <td>1.51 MiB</td>
-    <td>0.44</td>
-    <td>0.35</td>
-    <td>1.40</td>
 </tr>
 <tr>
     <td><a href="./hono.ts.md">Hono</a></td>

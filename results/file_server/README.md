@@ -20,18 +20,18 @@
     <td><a href="./hydra.ts.md">Hydra</a></td>
     <td>100.00%</td>
     <td>100.00%</td>
-    <td>15.59k</td>
-    <td>17.04k</td>
-    <td>596.79</td>
-    <td>82.52 MiB</td>
-    <td>4.09</td>
-    <td>1.21</td>
-    <td>5.34</td>
+    <td>15.78k</td>
+    <td>16.99k</td>
+    <td>783.75</td>
+    <td>83.60 MiB</td>
+    <td>4.04</td>
+    <td>1.44</td>
+    <td>6.41</td>
 </tr>
 <tr>
     <td><a href="./vixeny.ts.md">Vixeny</a></td>
-    <td>88.77%</td>
-    <td>88.78%</td>
+    <td>87.73%</td>
+    <td>87.61%</td>
     <td>13.84k</td>
     <td>15.77k</td>
     <td>1.51k</td>
@@ -42,8 +42,8 @@
 </tr>
 <tr>
     <td><a href="./hono.ts.md">Hono</a></td>
-    <td>84.78%</td>
-    <td>84.72%</td>
+    <td>83.78%</td>
+    <td>83.61%</td>
     <td>13.22k</td>
     <td>14.80k</td>
     <td>1.55k</td>
@@ -54,8 +54,8 @@
 </tr>
 <tr>
     <td><a href="./aqua.ts.md">Aqua</a></td>
-    <td>69.89%</td>
-    <td>69.88%</td>
+    <td>69.06%</td>
+    <td>68.97%</td>
     <td>10.90k</td>
     <td>13.08k</td>
     <td>1.43k</td>
@@ -66,8 +66,8 @@
 </tr>
 <tr>
     <td><a href="./oak.ts.md">Oak</a></td>
-    <td>34.87%</td>
-    <td>33.55%</td>
+    <td>34.46%</td>
+    <td>33.10%</td>
     <td>5.44k</td>
     <td>12.97k</td>
     <td>1.74k</td>
@@ -78,8 +78,8 @@
 </tr>
 <tr>
     <td><a href="./danet.ts.md">Danet</a></td>
-    <td>32.10%</td>
-    <td>32.02%</td>
+    <td>31.72%</td>
+    <td>31.60%</td>
     <td>5.00k</td>
     <td>10.07k</td>
     <td>1.41k</td>
@@ -90,8 +90,8 @@
 </tr>
 <tr>
     <td><a href="./deno_serve.ts.md">Deno.serve</a></td>
-    <td>14.32%</td>
-    <td>9.94%</td>
+    <td>14.15%</td>
+    <td>9.81%</td>
     <td>2.23k</td>
     <td>272.53k</td>
     <td>10.25k</td>
@@ -102,8 +102,8 @@
 </tr>
 <tr>
     <td><a href="./deno_serve_serveDir.ts.md">Deno.serve + serveDir from std</a></td>
-    <td>12.89%</td>
-    <td>9.89%</td>
+    <td>12.74%</td>
+    <td>9.76%</td>
     <td>2.01k</td>
     <td>164.57k</td>
     <td>6.29k</td>
@@ -114,8 +114,8 @@
 </tr>
 <tr>
     <td><a href="./deno_serve_http.ts.md">Deno.serveHttp</a></td>
-    <td>10.97%</td>
-    <td>9.92%</td>
+    <td>10.84%</td>
+    <td>9.79%</td>
     <td>1.71k</td>
     <td>11.94k</td>
     <td>1.19k</td>
@@ -126,8 +126,8 @@
 </tr>
 <tr>
     <td><a href="./deno_std_serve.ts.md">std serve + serveDir</a></td>
-    <td>10.38%</td>
-    <td>9.86%</td>
+    <td>10.25%</td>
+    <td>9.73%</td>
     <td>1.62k</td>
     <td>10.45k</td>
     <td>899.49</td>
