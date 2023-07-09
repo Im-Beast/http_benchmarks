@@ -84,3 +84,5 @@ for (const benchmarkGroup in benchmarkList) {
 }
 
 await Deno.writeTextFile(BENCHMARK_CACHE_PATH, JSON.stringify(BENCHMARK_CACHE));
+
+Deno.exit(0);
