@@ -185,6 +185,18 @@
     <td>4.43</td>
 </tr>
 <tr>
+    <td><a href="./composium.ts.md">Composium</a></td>
+    <td>22.44%</td>
+    <td>22.17%</td>
+    <td>37.52k</td>
+    <td>39.42k</td>
+    <td>2.75k</td>
+    <td>0.39 MiB</td>
+    <td>1.70</td>
+    <td>1.06</td>
+    <td>4.16</td>
+</tr>
+<tr>
     <td><a href="./danet.ts.md">Danet</a></td>
     <td>18.97%</td>
     <td>18.71%</td>

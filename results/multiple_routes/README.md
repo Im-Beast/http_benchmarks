@@ -209,6 +209,18 @@
     <td>6.94</td>
 </tr>
 <tr>
+    <td><a href="./composium.ts.md">Composium</a></td>
+    <td>14.76%</td>
+    <td>14.64%</td>
+    <td>20.50k</td>
+    <td>21.42k</td>
+    <td>1.34k</td>
+    <td>0.36 MiB</td>
+    <td>3.11</td>
+    <td>1.40</td>
+    <td>6.25</td>
+</tr>
+<tr>
     <td><a href="./acorn.ts.md">Acorn</a></td>
     <td>4.55%</td>
     <td>4.52%</td>
