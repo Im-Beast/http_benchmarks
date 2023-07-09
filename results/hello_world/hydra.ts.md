@@ -1,6 +1,6 @@
-# Name: Opine 
+# Name: Hydra 
   
-  ### Version: 2.3.4
+  ### Version: 0.2.0
   ### Deno version: 1.35.0
 
 ## Summary
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>19.35k</td>
-    <td>21.70k</td>
-    <td>1.46k</td>
-    <td>0.20 MiB</td>
-    <td>3.30</td>
-    <td>1.39</td>
-    <td>8.42</td>
+    <td>143.81k</td>
+    <td>151.28k</td>
+    <td>9.46k</td>
+    <td>1.51 MiB</td>
+    <td>0.44</td>
+    <td>0.35</td>
+    <td>1.40</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>18035.01k</td>
-  <td>18035.01k</td>
-  <td>18035.01k</td>
-  <td>18035.01k</td>
-  <td>20360.76k</td>
-  <td>20760.90k</td>
-  <td>21697.62k</td>
+  <td>129415.75k</td>
+  <td>129415.75k</td>
+  <td>129415.75k</td>
+  <td>129415.75k</td>
+  <td>151278.93k</td>
+  <td>151278.93k</td>
+  <td>151278.93k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>2.85</td>
-  <td>2.85</td>
-  <td>2.85</td>
-  <td>2.85</td>
-  <td>4.17</td>
-  <td>4.51</td>
-  <td>5.09</td>
+  <td>0.39</td>
+  <td>0.39</td>
+  <td>0.39</td>
+  <td>0.39</td>
+  <td>0.49</td>
+  <td>0.53</td>
+  <td>0.63</td>
 </tr>
 </table>
