@@ -101,16 +101,16 @@
     <td>45.79</td>
 </tr>
 <tr>
-    <td><a href="./deno_serve_serveDir.ts.md">Deno.serve + serveDir from std</a></td>
-    <td>12.74%</td>
-    <td>9.76%</td>
-    <td>2.01k</td>
-    <td>164.57k</td>
-    <td>6.29k</td>
-    <td>8.16 MiB</td>
-    <td>41.36</td>
-    <td>9.99</td>
-    <td>48.90</td>
+    <td><a href="./deno_std_serve.ts.md">std serve + serveDir</a></td>
+    <td>12.88%</td>
+    <td>9.75%</td>
+    <td>2.03k</td>
+    <td>184.07k</td>
+    <td>8.52k</td>
+    <td>5.11 MiB</td>
+    <td>41.39</td>
+    <td>11.32</td>
+    <td>61.21</td>
 </tr>
 <tr>
     <td><a href="./deno_serve_http.ts.md">Deno.serveHttp</a></td>
@@ -125,15 +125,15 @@
     <td>45.84</td>
 </tr>
 <tr>
-    <td><a href="./deno_std_serve.ts.md">std serve + serveDir</a></td>
-    <td>10.25%</td>
-    <td>9.73%</td>
-    <td>1.62k</td>
-    <td>10.45k</td>
-    <td>899.49</td>
-    <td>5.10 MiB</td>
-    <td>41.47</td>
-    <td>12.49</td>
-    <td>63.97</td>
+    <td><a href="./deno_serve_serveDir.ts.md">Deno.serve + serveDir from std</a></td>
+    <td>10.72%</td>
+    <td>9.77%</td>
+    <td>1.69k</td>
+    <td>8.58k</td>
+    <td>1.20k</td>
+    <td>8.17 MiB</td>
+    <td>41.30</td>
+    <td>9.67</td>
+    <td>48.34</td>
 </tr>
 </table>
