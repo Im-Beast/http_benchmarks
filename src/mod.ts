@@ -81,8 +81,8 @@ for (const benchmarkGroup in benchmarkList) {
     join(BENCHMARK_RESULTS_PATH, benchmarkGroup, "README.md"),
     formatResultComparison(benchmarkResults[benchmarkGroup]),
   );
+  await Deno.writeTextFile(BENCHMARK_CACHE_PATH, JSON.stringify(BENCHMARK_CACHE));
 }
 
 await Deno.writeTextFile(BENCHMARK_CACHE_PATH, JSON.stringify(BENCHMARK_CACHE));
-
 Deno.exit(0);
