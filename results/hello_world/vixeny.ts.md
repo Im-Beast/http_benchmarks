@@ -1,7 +1,7 @@
 # Name: Vixeny 
   
-  ### Version: 0.0.66
-  ### Deno version: 1.35.0
+  ### Version: 0.0.67
+  ### Deno version: 1.35.1
 
 ## Summary
 <table>
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>159.76k</td>
-    <td>166.42k</td>
-    <td>9.94k</td>
-    <td>1.69 MiB</td>
-    <td>0.39</td>
+    <td>154.14k</td>
+    <td>160.42k</td>
+    <td>7.79k</td>
+    <td>1.61 MiB</td>
+    <td>0.41</td>
     <td>0.32</td>
-    <td>1.21</td>
+    <td>1.11</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>142260.40k</td>
-  <td>142260.40k</td>
-  <td>142260.40k</td>
-  <td>142260.40k</td>
-  <td>166418.81k</td>
-  <td>166418.81k</td>
-  <td>166418.81k</td>
+  <td>137155.86k</td>
+  <td>137155.86k</td>
+  <td>137155.86k</td>
+  <td>137155.86k</td>
+  <td>160419.04k</td>
+  <td>160419.04k</td>
+  <td>160419.04k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.36</td>
-  <td>0.36</td>
-  <td>0.36</td>
-  <td>0.36</td>
-  <td>0.44</td>
-  <td>0.47</td>
+  <td>0.37</td>
+  <td>0.37</td>
+  <td>0.37</td>
+  <td>0.37</td>
+  <td>0.46</td>
+  <td>0.50</td>
   <td>0.55</td>
 </tr>
 </table>

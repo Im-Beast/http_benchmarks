@@ -1,7 +1,7 @@
 # Name: std serve 
   
-  ### Version: 0.193.0
-  ### Deno version: 1.35.0
+  ### Version: 0.194.0
+  ### Deno version: 1.35.1
 
 ## Summary
 <table>
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>97.44k</td>
-    <td>110.29k</td>
-    <td>13.02k</td>
-    <td>1.05 MiB</td>
+    <td>97.27k</td>
+    <td>113.31k</td>
+    <td>13.83k</td>
+    <td>1.06 MiB</td>
     <td>0.63</td>
-    <td>0.40</td>
-    <td>3.02</td>
+    <td>0.39</td>
+    <td>2.91</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>83615.23k</td>
-  <td>83615.23k</td>
-  <td>83615.23k</td>
-  <td>83615.23k</td>
-  <td>109244.86k</td>
-  <td>110292.92k</td>
-  <td>110292.92k</td>
+  <td>82098.52k</td>
+  <td>82098.52k</td>
+  <td>82098.52k</td>
+  <td>82098.52k</td>
+  <td>110884.61k</td>
+  <td>113306.19k</td>
+  <td>113306.19k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.54</td>
-  <td>0.54</td>
-  <td>0.54</td>
-  <td>0.54</td>
+  <td>0.53</td>
+  <td>0.53</td>
+  <td>0.53</td>
+  <td>0.53</td>
   <td>0.75</td>
-  <td>0.82</td>
-  <td>1.50</td>
+  <td>0.83</td>
+  <td>1.49</td>
 </tr>
 </table>

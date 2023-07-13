@@ -1,7 +1,7 @@
 # Name: Fastro 
   
   ### Version: 0.70.5
-  ### Deno version: 1.35.0
+  ### Deno version: 1.35.1
 
 ## Summary
 <table>
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>87.20k</td>
-    <td>95.76k</td>
-    <td>9.20k</td>
+    <td>86.77k</td>
+    <td>95.63k</td>
+    <td>10.31k</td>
     <td>0.91 MiB</td>
     <td>0.73</td>
-    <td>0.42</td>
-    <td>3.53</td>
+    <td>0.40</td>
+    <td>3.32</td>
 </tr>
 </table>
 
@@ -44,13 +44,13 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>71011.16k</td>
-  <td>71011.16k</td>
-  <td>71011.16k</td>
-  <td>71011.16k</td>
-  <td>95009.92k</td>
-  <td>95761.10k</td>
-  <td>95761.10k</td>
+  <td>66215.15k</td>
+  <td>66215.15k</td>
+  <td>66215.15k</td>
+  <td>66215.15k</td>
+  <td>94461.24k</td>
+  <td>95626.22k</td>
+  <td>95626.22k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
@@ -58,8 +58,8 @@
   <td>0.62</td>
   <td>0.62</td>
   <td>0.62</td>
-  <td>0.89</td>
-  <td>1.17</td>
-  <td>1.58</td>
+  <td>0.88</td>
+  <td>1.22</td>
+  <td>1.63</td>
 </tr>
 </table>

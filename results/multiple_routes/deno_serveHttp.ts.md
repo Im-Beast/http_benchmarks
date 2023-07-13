@@ -1,7 +1,7 @@
 # Name: Deno.serveHttp 
   
-  ### Version: Deno 1.35.0
-  ### Deno version: 1.35.0
+  ### Version: Deno 1.35.1
+  ### Deno version: 1.35.1
 
 ## Summary
 <table>
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>75.24k</td>
-    <td>82.76k</td>
-    <td>6.89k</td>
-    <td>1.31 MiB</td>
-    <td>0.85</td>
-    <td>0.45</td>
-    <td>3.40</td>
+    <td>76.06k</td>
+    <td>82.91k</td>
+    <td>6.48k</td>
+    <td>1.33 MiB</td>
+    <td>0.83</td>
+    <td>0.51</td>
+    <td>3.43</td>
 </tr>
 </table>
 
@@ -44,23 +44,23 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>61675.78k</td>
-  <td>61675.78k</td>
-  <td>61675.78k</td>
-  <td>61675.78k</td>
-  <td>81856.82k</td>
-  <td>82757.67k</td>
-  <td>82757.67k</td>
+  <td>65642.30k</td>
+  <td>65642.30k</td>
+  <td>65642.30k</td>
+  <td>65642.30k</td>
+  <td>82530.98k</td>
+  <td>82907.55k</td>
+  <td>82907.55k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.72</td>
-  <td>0.72</td>
-  <td>0.72</td>
-  <td>0.72</td>
-  <td>1.05</td>
-  <td>1.18</td>
-  <td>1.78</td>
+  <td>0.71</td>
+  <td>0.71</td>
+  <td>0.71</td>
+  <td>0.71</td>
+  <td>1.04</td>
+  <td>1.22</td>
+  <td>1.71</td>
 </tr>
 </table>
 
@@ -93,69 +93,69 @@
 </tr>
 <tr>
   <td>/random_number</td>
-  <td>75.24k</td>
-  <td>82.76k</td>
-  <td>6.89k</td>
-  <td>1.31</td>
-  <td>61675.78k</td>
-  <td>61675.78k</td>
-  <td>61675.78k</td>
-  <td>61675.78k</td>
-  <td>81856.82k</td>
-  <td>82757.67k</td>
-  <td>82757.67k</td>
+  <td>76.06k</td>
+  <td>82.91k</td>
+  <td>6.48k</td>
+  <td>1.33</td>
+  <td>65642.30k</td>
+  <td>65642.30k</td>
+  <td>65642.30k</td>
+  <td>65642.30k</td>
+  <td>82530.98k</td>
+  <td>82907.55k</td>
+  <td>82907.55k</td>
 </tr><tr>
   <td>/hello_world</td>
-  <td>78.39k</td>
-  <td>86.49k</td>
-  <td>7.42k</td>
-  <td>0.82</td>
-  <td>65592.04k</td>
-  <td>65592.04k</td>
-  <td>65592.04k</td>
-  <td>65592.04k</td>
-  <td>85578.73k</td>
-  <td>86485.91k</td>
-  <td>86485.91k</td>
+  <td>78.89k</td>
+  <td>86.40k</td>
+  <td>6.56k</td>
+  <td>0.83</td>
+  <td>67939.80k</td>
+  <td>67939.80k</td>
+  <td>67939.80k</td>
+  <td>67939.80k</td>
+  <td>85850.35k</td>
+  <td>86397.57k</td>
+  <td>86397.57k</td>
 </tr><tr>
   <td>/plus_1</td>
-  <td>76.98k</td>
-  <td>86.67k</td>
-  <td>7.68k</td>
+  <td>75.58k</td>
+  <td>85.16k</td>
+  <td>9.12k</td>
   <td>0.15</td>
-  <td>66284.91k</td>
-  <td>66284.91k</td>
-  <td>66284.91k</td>
-  <td>66284.91k</td>
-  <td>83791.95k</td>
-  <td>86665.26k</td>
-  <td>86665.26k</td>
+  <td>60721.72k</td>
+  <td>60721.72k</td>
+  <td>60721.72k</td>
+  <td>60721.72k</td>
+  <td>83150.78k</td>
+  <td>85164.44k</td>
+  <td>85164.44k</td>
 </tr><tr>
   <td>/count</td>
-  <td>79.53k</td>
-  <td>87.37k</td>
-  <td>7.59k</td>
+  <td>79.31k</td>
+  <td>87.18k</td>
+  <td>7.00k</td>
   <td>0.08</td>
-  <td>67214.89k</td>
-  <td>67214.89k</td>
-  <td>67214.89k</td>
-  <td>67214.89k</td>
-  <td>86531.48k</td>
-  <td>87369.73k</td>
-  <td>87369.73k</td>
+  <td>68732.34k</td>
+  <td>68732.34k</td>
+  <td>68732.34k</td>
+  <td>68732.34k</td>
+  <td>86660.72k</td>
+  <td>87176.30k</td>
+  <td>87176.30k</td>
 </tr><tr>
   <td>/minus_1</td>
-  <td>77.87k</td>
-  <td>83.69k</td>
-  <td>7.27k</td>
+  <td>77.79k</td>
+  <td>84.10k</td>
+  <td>7.12k</td>
   <td>0.15</td>
-  <td>64919.38k</td>
-  <td>64919.38k</td>
-  <td>64919.38k</td>
-  <td>64919.38k</td>
-  <td>83488.52k</td>
-  <td>83685.43k</td>
-  <td>83685.43k</td>
+  <td>66193.44k</td>
+  <td>66193.44k</td>
+  <td>66193.44k</td>
+  <td>66193.44k</td>
+  <td>83725.94k</td>
+  <td>84101.88k</td>
+  <td>84101.88k</td>
 </tr></table>
 
 ### Latency
@@ -182,62 +182,62 @@
 </tr>
 <tr>
   <td>/random_number</td>
-  <td>0.85</td>
-  <td>0.45</td>
-  <td>3.40</td>
-  <td>0.72</td>
-  <td>0.72</td>
-  <td>0.72</td>
-  <td>0.72</td>
-  <td>1.05</td>
-  <td>1.18</td>
-  <td>1.78</td>
+  <td>0.83</td>
+  <td>0.51</td>
+  <td>3.43</td>
+  <td>0.71</td>
+  <td>0.71</td>
+  <td>0.71</td>
+  <td>0.71</td>
+  <td>1.04</td>
+  <td>1.22</td>
+  <td>1.71</td>
 </tr><tr>
   <td>/hello_world</td>
   <td>0.81</td>
-  <td>0.45</td>
-  <td>3.12</td>
+  <td>0.44</td>
+  <td>2.92</td>
   <td>0.69</td>
   <td>0.69</td>
   <td>0.69</td>
   <td>0.69</td>
   <td>0.99</td>
-  <td>1.13</td>
-  <td>1.77</td>
+  <td>1.16</td>
+  <td>1.69</td>
 </tr><tr>
   <td>/plus_1</td>
-  <td>0.82</td>
-  <td>0.42</td>
-  <td>3.11</td>
-  <td>0.70</td>
-  <td>0.70</td>
-  <td>0.70</td>
-  <td>0.70</td>
+  <td>0.83</td>
+  <td>0.51</td>
+  <td>3.01</td>
+  <td>0.71</td>
+  <td>0.71</td>
+  <td>0.71</td>
+  <td>0.71</td>
   <td>1.02</td>
-  <td>1.14</td>
-  <td>1.59</td>
+  <td>1.19</td>
+  <td>1.68</td>
 </tr><tr>
   <td>/count</td>
   <td>0.80</td>
-  <td>0.41</td>
-  <td>3.12</td>
-  <td>0.68</td>
-  <td>0.68</td>
-  <td>0.68</td>
-  <td>0.68</td>
+  <td>0.51</td>
+  <td>2.87</td>
+  <td>0.69</td>
+  <td>0.69</td>
+  <td>0.69</td>
+  <td>0.69</td>
   <td>0.99</td>
-  <td>1.14</td>
+  <td>1.10</td>
   <td>1.63</td>
 </tr><tr>
   <td>/minus_1</td>
   <td>0.82</td>
-  <td>0.44</td>
-  <td>3.31</td>
+  <td>0.47</td>
+  <td>3.10</td>
   <td>0.71</td>
   <td>0.71</td>
   <td>0.71</td>
   <td>0.71</td>
-  <td>1.02</td>
-  <td>1.20</td>
-  <td>1.68</td>
+  <td>1.03</td>
+  <td>1.19</td>
+  <td>1.70</td>
 </tr></table>
