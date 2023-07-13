@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>5.00k</td>
-    <td>10.07k</td>
-    <td>1.41k</td>
-    <td>26.47 MiB</td>
-    <td>12.77</td>
-    <td>6.77</td>
-    <td>19.97</td>
+    <td>5.09k</td>
+    <td>8.97k</td>
+    <td>1.29k</td>
+    <td>26.92 MiB</td>
+    <td>12.55</td>
+    <td>7.09</td>
+    <td>19.94</td>
 </tr>
 </table>
 
@@ -44,23 +44,23 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>2881.75k</td>
-  <td>2881.75k</td>
-  <td>2881.75k</td>
-  <td>2881.75k</td>
-  <td>6419.86k</td>
-  <td>6731.19k</td>
-  <td>7529.04k</td>
+  <td>3199.64k</td>
+  <td>3199.64k</td>
+  <td>3199.64k</td>
+  <td>3199.64k</td>
+  <td>6308.47k</td>
+  <td>6601.96k</td>
+  <td>7455.72k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>10.99</td>
-  <td>10.99</td>
-  <td>10.99</td>
-  <td>10.99</td>
-  <td>15.48</td>
-  <td>15.78</td>
-  <td>16.58</td>
+  <td>10.82</td>
+  <td>10.82</td>
+  <td>10.82</td>
+  <td>10.82</td>
+  <td>15.23</td>
+  <td>15.45</td>
+  <td>15.98</td>
 </tr>
 </table>
 
@@ -93,43 +93,43 @@
 </tr>
 <tr>
   <td>lorem-20.txt</td>
-  <td>5.00k</td>
-  <td>10.07k</td>
-  <td>1.41k</td>
-  <td>26.47</td>
-  <td>2881.75k</td>
-  <td>2881.75k</td>
-  <td>2881.75k</td>
-  <td>2881.75k</td>
-  <td>6419.86k</td>
-  <td>6731.19k</td>
-  <td>7529.04k</td>
+  <td>5.09k</td>
+  <td>8.97k</td>
+  <td>1.29k</td>
+  <td>26.92</td>
+  <td>3199.64k</td>
+  <td>3199.64k</td>
+  <td>3199.64k</td>
+  <td>3199.64k</td>
+  <td>6308.47k</td>
+  <td>6601.96k</td>
+  <td>7455.72k</td>
 </tr><tr>
   <td>text.txt</td>
-  <td>9.69k</td>
-  <td>14.17k</td>
-  <td>2.33k</td>
-  <td>0.46</td>
-  <td>6707.18k</td>
-  <td>6707.18k</td>
-  <td>6707.18k</td>
-  <td>6707.18k</td>
-  <td>13360.01k</td>
-  <td>13574.90k</td>
-  <td>14134.66k</td>
+  <td>9.38k</td>
+  <td>14.38k</td>
+  <td>2.47k</td>
+  <td>0.45</td>
+  <td>6788.42k</td>
+  <td>6788.42k</td>
+  <td>6788.42k</td>
+  <td>6788.42k</td>
+  <td>12890.01k</td>
+  <td>13550.63k</td>
+  <td>14349.86k</td>
 </tr><tr>
   <td>doggy.jpeg</td>
-  <td>1.56k</td>
-  <td>7.48k</td>
-  <td>781.49</td>
-  <td>546.98</td>
-  <td>711.43k</td>
-  <td>711.43k</td>
-  <td>711.43k</td>
-  <td>711.43k</td>
-  <td>2429.76k</td>
-  <td>2752.14k</td>
-  <td>4585.27k</td>
+  <td>1.55k</td>
+  <td>6.49k</td>
+  <td>744.45</td>
+  <td>551.46</td>
+  <td>712.43k</td>
+  <td>712.43k</td>
+  <td>712.43k</td>
+  <td>712.43k</td>
+  <td>2387.68k</td>
+  <td>2691.46k</td>
+  <td>4066.92k</td>
 </tr></table>
 
 ### Latency
@@ -156,38 +156,38 @@
 </tr>
 <tr>
   <td>lorem-20.txt</td>
-  <td>12.77</td>
-  <td>6.77</td>
-  <td>19.97</td>
-  <td>10.99</td>
-  <td>10.99</td>
-  <td>10.99</td>
-  <td>10.99</td>
-  <td>15.48</td>
-  <td>15.78</td>
-  <td>16.58</td>
+  <td>12.55</td>
+  <td>7.09</td>
+  <td>19.94</td>
+  <td>10.82</td>
+  <td>10.82</td>
+  <td>10.82</td>
+  <td>10.82</td>
+  <td>15.23</td>
+  <td>15.45</td>
+  <td>15.98</td>
 </tr><tr>
   <td>text.txt</td>
-  <td>6.63</td>
-  <td>3.33</td>
-  <td>10.69</td>
-  <td>5.74</td>
-  <td>5.74</td>
-  <td>5.74</td>
-  <td>5.74</td>
-  <td>7.38</td>
-  <td>7.66</td>
-  <td>10.22</td>
+  <td>6.83</td>
+  <td>4.09</td>
+  <td>10.91</td>
+  <td>5.94</td>
+  <td>5.94</td>
+  <td>5.94</td>
+  <td>5.94</td>
+  <td>7.62</td>
+  <td>7.97</td>
+  <td>10.55</td>
 </tr><tr>
   <td>doggy.jpeg</td>
-  <td>42.69</td>
-  <td>6.55</td>
-  <td>245.63</td>
-  <td>19.50</td>
-  <td>19.50</td>
-  <td>19.50</td>
-  <td>19.50</td>
-  <td>86.01</td>
-  <td>112.44</td>
-  <td>166.84</td>
+  <td>42.35</td>
+  <td>8.96</td>
+  <td>269.59</td>
+  <td>21.34</td>
+  <td>21.34</td>
+  <td>21.34</td>
+  <td>21.34</td>
+  <td>83.78</td>
+  <td>115.16</td>
+  <td>172.05</td>
 </tr></table>

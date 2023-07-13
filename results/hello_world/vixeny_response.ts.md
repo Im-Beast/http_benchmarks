@@ -1,6 +1,6 @@
 # Name: Vixeny – Response 
   ### Description: Using type: 'response'
-  ### Version: 0.0.63
+  ### Version: 0.0.66
   ### Deno version: 1.35.0
 
 ## Summary
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>150.16k</td>
-    <td>158.95k</td>
-    <td>11.49k</td>
-    <td>1.58 MiB</td>
-    <td>0.42</td>
-    <td>0.33</td>
-    <td>1.14</td>
+    <td>154.40k</td>
+    <td>162.90k</td>
+    <td>12.63k</td>
+    <td>1.62 MiB</td>
+    <td>0.41</td>
+    <td>0.32</td>
+    <td>1.16</td>
 </tr>
 </table>
 
@@ -44,13 +44,13 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>131299.31k</td>
-  <td>131299.31k</td>
-  <td>131299.31k</td>
-  <td>131299.31k</td>
-  <td>158953.08k</td>
-  <td>158953.08k</td>
-  <td>158953.08k</td>
+  <td>135026.95k</td>
+  <td>135026.95k</td>
+  <td>135026.95k</td>
+  <td>135026.95k</td>
+  <td>162896.39k</td>
+  <td>162896.39k</td>
+  <td>162896.39k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
@@ -58,8 +58,8 @@
   <td>0.37</td>
   <td>0.37</td>
   <td>0.37</td>
-  <td>0.47</td>
-  <td>0.51</td>
-  <td>0.63</td>
+  <td>0.46</td>
+  <td>0.49</td>
+  <td>0.56</td>
 </tr>
 </table>

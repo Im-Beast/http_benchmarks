@@ -1,6 +1,6 @@
 # Name: NHttp 
   
-  ### Version: 1.2.23
+  ### Version: 1.2.24
   ### Deno version: 1.35.0
 
 ## Summary
@@ -19,13 +19,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>90.79k</td>
-    <td>105.09k</td>
-    <td>10.45k</td>
-    <td>0.96 MiB</td>
-    <td>0.69</td>
-    <td>0.52</td>
-    <td>3.36</td>
+    <td>94.92k</td>
+    <td>104.74k</td>
+    <td>12.65k</td>
+    <td>1.00 MiB</td>
+    <td>0.67</td>
+    <td>0.51</td>
+    <td>3.17</td>
 </tr>
 </table>
 
@@ -44,22 +44,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>78527.61k</td>
-  <td>78527.61k</td>
-  <td>78527.61k</td>
-  <td>78527.61k</td>
-  <td>104314.08k</td>
-  <td>105090.06k</td>
-  <td>105090.06k</td>
+  <td>80088.69k</td>
+  <td>80088.69k</td>
+  <td>80088.69k</td>
+  <td>80088.69k</td>
+  <td>104116.41k</td>
+  <td>104737.30k</td>
+  <td>104737.30k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.58</td>
-  <td>0.58</td>
-  <td>0.58</td>
-  <td>0.58</td>
-  <td>0.84</td>
-  <td>0.96</td>
-  <td>1.71</td>
+  <td>0.57</td>
+  <td>0.57</td>
+  <td>0.57</td>
+  <td>0.57</td>
+  <td>0.81</td>
+  <td>0.90</td>
+  <td>1.51</td>
 </tr>
 </table>

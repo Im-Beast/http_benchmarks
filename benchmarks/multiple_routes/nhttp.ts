@@ -1,9 +1,9 @@
-import nhttp from "https://deno.land/x/nhttp@1.2.23/mod.ts";
+import nhttp from "https://deno.land/x/nhttp@1.2.24/mod.ts";
 import { HTTP_PORT, HTTP_URL, MULTIPLE_ROUTES, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
 
 export const NAME = "NHttp";
 export const DESCRIPTION = "";
-export const VERSION = "1.2.23";
+export const VERSION = "1.2.24";
 
 if (import.meta.main) {
   const app = nhttp({
