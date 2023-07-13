@@ -17,21 +17,21 @@
     <td align="center">Min</td>
     <td align="center">Max</td>
 </tr><tr>
-    <td><a href="./nhttp.ts.md">NHttp (flash)</a></td>
+    <td><a href="./nhttp.ts.md">NHttp</a></td>
     <td>100.00%</td>
     <td>100.00%</td>
-    <td>146.66k</td>
-    <td>151.53k</td>
-    <td>7.45k</td>
-    <td>2.55 MiB</td>
-    <td>0.43</td>
+    <td>145.07k</td>
+    <td>149.61k</td>
+    <td>8.09k</td>
+    <td>2.53 MiB</td>
+    <td>0.44</td>
     <td>0.35</td>
-    <td>1.18</td>
+    <td>1.21</td>
 </tr>
 <tr>
     <td><a href="./vixeny_response.ts.md">Vixeny – Response</a></td>
-    <td>97.64%</td>
-    <td>97.61%</td>
+    <td>98.70%</td>
+    <td>98.72%</td>
     <td>143.19k</td>
     <td>149.05k</td>
     <td>8.66k</td>
@@ -42,8 +42,8 @@
 </tr>
 <tr>
     <td><a href="./vixeny.ts.md">Vixeny</a></td>
-    <td>93.78%</td>
-    <td>94.49%</td>
+    <td>94.81%</td>
+    <td>95.56%</td>
     <td>137.54k</td>
     <td>147.79k</td>
     <td>8.32k</td>
@@ -54,8 +54,8 @@
 </tr>
 <tr>
     <td><a href="./hydra.ts.md">Hydra</a></td>
-    <td>91.85%</td>
-    <td>92.84%</td>
+    <td>92.85%</td>
+    <td>93.89%</td>
     <td>134.71k</td>
     <td>144.96k</td>
     <td>9.49k</td>
@@ -66,8 +66,8 @@
 </tr>
 <tr>
     <td><a href="./fastro_flash.ts.md">Fastro (flash)</a></td>
-    <td>91.31%</td>
-    <td>91.04%</td>
+    <td>92.30%</td>
+    <td>92.07%</td>
     <td>133.90k</td>
     <td>143.09k</td>
     <td>8.33k</td>
@@ -78,8 +78,8 @@
 </tr>
 <tr>
     <td><a href="./deno_serve.ts.md">Deno.serve</a></td>
-    <td>87.14%</td>
-    <td>87.08%</td>
+    <td>88.09%</td>
+    <td>88.07%</td>
     <td>127.80k</td>
     <td>132.12k</td>
     <td>8.03k</td>
@@ -90,8 +90,8 @@
 </tr>
 <tr>
     <td><a href="./hono.ts.md">Hono</a></td>
-    <td>83.23%</td>
-    <td>84.04%</td>
+    <td>84.14%</td>
+    <td>84.99%</td>
     <td>122.06k</td>
     <td>139.48k</td>
     <td>13.90k</td>
@@ -102,8 +102,8 @@
 </tr>
 <tr>
     <td><a href="./deno_std_serve.ts.md">std serve</a></td>
-    <td>59.48%</td>
-    <td>59.11%</td>
+    <td>60.13%</td>
+    <td>59.78%</td>
     <td>87.22k</td>
     <td>95.78k</td>
     <td>7.06k</td>
@@ -114,8 +114,8 @@
 </tr>
 <tr>
     <td><a href="./fastro.ts.md">Fastro</a></td>
-    <td>56.35%</td>
-    <td>56.37%</td>
+    <td>56.97%</td>
+    <td>57.01%</td>
     <td>82.64k</td>
     <td>92.78k</td>
     <td>9.37k</td>
@@ -126,8 +126,8 @@
 </tr>
 <tr>
     <td><a href="./deno_serveHttp.ts.md">Deno.serveHttp</a></td>
-    <td>51.86%</td>
-    <td>51.80%</td>
+    <td>52.43%</td>
+    <td>52.39%</td>
     <td>76.06k</td>
     <td>82.91k</td>
     <td>6.48k</td>
@@ -138,8 +138,8 @@
 </tr>
 <tr>
     <td><a href="./cheetah.ts.md">cheetah</a></td>
-    <td>41.83%</td>
-    <td>42.42%</td>
+    <td>42.29%</td>
+    <td>42.90%</td>
     <td>61.35k</td>
     <td>64.66k</td>
     <td>3.19k</td>
@@ -150,8 +150,8 @@
 </tr>
 <tr>
     <td><a href="./aqua.ts.md">Aqua</a></td>
-    <td>32.05%</td>
-    <td>31.90%</td>
+    <td>32.40%</td>
+    <td>32.26%</td>
     <td>47.00k</td>
     <td>51.12k</td>
     <td>3.86k</td>
@@ -162,8 +162,8 @@
 </tr>
 <tr>
     <td><a href="./oak.ts.md">Oak</a></td>
-    <td>26.07%</td>
-    <td>25.85%</td>
+    <td>26.35%</td>
+    <td>26.14%</td>
     <td>38.23k</td>
     <td>42.32k</td>
     <td>3.19k</td>
@@ -174,8 +174,8 @@
 </tr>
 <tr>
     <td><a href="./danet.ts.md">Danet</a></td>
-    <td>21.22%</td>
-    <td>21.06%</td>
+    <td>21.45%</td>
+    <td>21.30%</td>
     <td>31.12k</td>
     <td>33.78k</td>
     <td>2.58k</td>
@@ -186,8 +186,8 @@
 </tr>
 <tr>
     <td><a href="./opine.ts.md">Opine</a></td>
-    <td>16.41%</td>
-    <td>16.33%</td>
+    <td>16.59%</td>
+    <td>16.51%</td>
     <td>24.07k</td>
     <td>27.30k</td>
     <td>1.96k</td>
@@ -198,8 +198,8 @@
 </tr>
 <tr>
     <td><a href="./composium.ts.md">Composium</a></td>
-    <td>14.02%</td>
-    <td>13.96%</td>
+    <td>14.17%</td>
+    <td>14.11%</td>
     <td>20.56k</td>
     <td>21.49k</td>
     <td>1.03k</td>
@@ -210,8 +210,8 @@
 </tr>
 <tr>
     <td><a href="./acorn.ts.md">Acorn</a></td>
-    <td>3.75%</td>
-    <td>2.77%</td>
+    <td>3.79%</td>
+    <td>2.80%</td>
     <td>5.50k</td>
     <td>41.25k</td>
     <td>4.82k</td>

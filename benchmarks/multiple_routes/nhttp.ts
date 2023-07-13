@@ -1,7 +1,7 @@
 import nhttp from "https://deno.land/x/nhttp@1.3.0/mod.ts";
 import { HTTP_PORT, HTTP_URL, MULTIPLE_ROUTES, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
 
-export const NAME = "NHttp (flash)";
+export const NAME = "NHttp";
 export const DESCRIPTION = "NHttp with `flash` option set to `true`";
 export const VERSION = "1.3.0";
 

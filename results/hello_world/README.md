@@ -29,16 +29,16 @@
     <td>1.18</td>
 </tr>
 <tr>
-    <td><a href="./nhttp.ts.md">NHttp (flash)</a></td>
-    <td>93.06%</td>
-    <td>93.57%</td>
-    <td>157.19k</td>
-    <td>164.84k</td>
-    <td>9.74k</td>
-    <td>1.66 MiB</td>
+    <td><a href="./nhttp.ts.md">NHttp</a></td>
+    <td>92.69%</td>
+    <td>93.23%</td>
+    <td>156.56k</td>
+    <td>163.15k</td>
+    <td>10.26k</td>
+    <td>1.65 MiB</td>
     <td>0.40</td>
     <td>0.32</td>
-    <td>1.10</td>
+    <td>1.19</td>
 </tr>
 <tr>
     <td><a href="./vixeny.ts.md">Vixeny</a></td>
