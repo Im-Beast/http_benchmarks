@@ -1,9 +1,9 @@
-import cheetah from "https://deno.land/x/cheetah@v1.0.0-canary.0/mod.ts";
+import cheetah from "https://deno.land/x/cheetah@v1.0.0-canary.1/mod.ts";
 import { HTTP_PORT, HTTP_URL, MULTIPLE_ROUTES, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
 
-export const NAME = "Cheetah";
+export const NAME = "cheetah";
 export const DESCRIPTION = "";
-export const VERSION = "1.0.0-canary.0";
+export const VERSION = "1.0.0-canary.1";
 
 if (import.meta.main) {
   let counter = 0;
@@ -11,8 +11,7 @@ if (import.meta.main) {
   const app = new cheetah()
     .get(MULTIPLE_ROUTES.HELLO_WORLD, () => RESPONSE_MESSAGE)
     .get(MULTIPLE_ROUTES.RANDOM_NUMBER, () => `${Math.random()}`)
-    .post(MULTIPLE_ROUTES.PLUS_1, (req) => {
-      req.body = { ok: true };
+    .post(MULTIPLE_ROUTES.PLUS_1, () => {
       counter++;
       return "ok";
     })
@@ -22,5 +21,5 @@ if (import.meta.main) {
     })
     .get(MULTIPLE_ROUTES.COUNT, () => `${counter}`);
 
-  await Deno.serve({ port: HTTP_PORT, hostname: HTTP_URL }, (request) => app.fetch(request)).finished;
+  await app.serve({ port: HTTP_PORT, hostname: HTTP_URL });
 }

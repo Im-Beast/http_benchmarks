@@ -1,10 +1,10 @@
 import { FILE_SERVER_PATH, HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
 import { getMimeType } from "https://deno.land/x/hono@v3.3.0/utils/mime.ts";
-import * as path from "https://deno.land/std@0.193.0/path/mod.ts";
+import * as path from "https://deno.land/std@0.194.0/path/mod.ts";
 
 export const NAME = "Deno.serve";
 export const DESCRIPTION = "";
-export const VERSION = "std 0.193.0";
+export const VERSION = "std 0.194.0";
 
 if (import.meta.main) {
   await Deno.serve({ hostname: HTTP_URL, port: HTTP_PORT }, (request: Request) => {

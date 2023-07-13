@@ -1,19 +1,17 @@
-import nhttp from "https://deno.land/x/nhttp@1.2.24/mod.ts";
+import nhttp from "https://deno.land/x/nhttp@1.3.0/mod.ts";
 import { HTTP_PORT, HTTP_URL, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
 
-export const NAME = "NHttp";
-export const DESCRIPTION = "";
-export const VERSION = "1.2.24";
+export const NAME = "NHttp (flash)";
+export const DESCRIPTION = "NHttp with `flash` option set to `true`";
+export const VERSION = "1.3.0";
 
 if (import.meta.main) {
-  const app = nhttp({
-    flash: false,
-  });
+  const app = nhttp();
 
   app.get("/", () => RESPONSE_MESSAGE);
 
-  await app.listen({
+  app.listen({
     hostname: HTTP_URL,
     port: HTTP_PORT,
-  }).finished;
+  })?.finished;
 }
