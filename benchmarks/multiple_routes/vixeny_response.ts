@@ -1,9 +1,9 @@
-import vixeny from "https://deno.land/x/endofunctor@v0.0.63/fun.ts";
+import vixeny from "https://deno.land/x/endofunctor@v0.0.67/fun.ts";
 import { MULTIPLE_ROUTES, PROTOCOL_HTTP_URL_PORT, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
 
 export const NAME = "Vixeny – Response";
 export const DESCRIPTION = "Using type: 'response'";
-export const VERSION = "0.0.63";
+export const VERSION = "0.0.67";
 
 if (import.meta.main) {
   let count = 0;
