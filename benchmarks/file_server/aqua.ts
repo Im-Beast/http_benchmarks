@@ -1,5 +1,7 @@
 import Aqua from "https://deno.land/x/aqua@v1.3.5/aqua.ts";
-import { FILE_SERVER_PATH, HTTP_PORT } from "../SERVER_DATA.ts";
+
+import { HTTP_PORT } from "../SERVER_DATA.ts";
+import { FILE_SERVER_PATH } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Aqua";
 export const DESCRIPTION = "";

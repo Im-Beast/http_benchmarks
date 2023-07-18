@@ -1,5 +1,6 @@
 import { crayon, normalize } from "./deps.ts";
 
+import { Benchmark } from "./mod.ts";
 import { PROTOCOL_HTTP_URL_PORT } from "../benchmarks/SERVER_DATA.ts";
 import {
   divideNumericData,
@@ -8,15 +9,13 @@ import {
   normalizeData,
   sumNumericObjects,
 } from "./normalize_data.ts";
-
 import type { BenchmarkInfo, BenchmarkResult, OhaJsonOutput } from "./types.ts";
 
 const textDecoder = new TextDecoder();
 
 export async function benchmarkFramework(
-  info: BenchmarkInfo,
-  steps: [method: string, route: string, weight: number][],
-  trackSteps: boolean,
+  info: Omit<BenchmarkInfo, "headers">,
+  data: Benchmark,
 ): Promise<BenchmarkResult> {
   const deno = new Deno.Command("deno", {
     args: ["run", "--unstable", "--allow-read", "--allow-net", "--allow-env", info.path],
@@ -29,26 +28,26 @@ export async function benchmarkFramework(
   // wait for a second so deno can fully start
   await new Promise((r) => setTimeout(r, 100));
 
-  // warmup
-
   const routeOutputs: Record<string, BenchmarkResult> = {};
 
   let sumWeight = 0;
-  for (const [method, route, weight] of steps) {
+  for (const { method, route, weight } of data.steps) {
     sumWeight += weight;
 
     const testedUrl = PROTOCOL_HTTP_URL_PORT.slice(0, -1) + normalize(`/${route}`);
 
     // warmup
+    console.log(crayon.lightYellow(`    - Warming up ${route}`));
     await (new Deno.Command("oha", {
-      args: [testedUrl, "-m", method, "-n", "3000", "-c", "64", "-j", "--no-tui"],
+      args: [testedUrl, "-m", method, "-n", "1000", "-c", "128", "-j", "--no-tui"],
       stdin: "null",
       stderr: "piped",
       stdout: "piped",
     })).output();
 
+    console.log(crayon.lightGreen(`    - Benchmarking ${route}`));
     const results: BenchmarkResult[] = [];
-    for (let i = 0; i < 5; ++i) {
+    for (let i = 0; i < 3; ++i) {
       const oha = new Deno.Command("oha", {
         args: [testedUrl, "-m", method, "-n", "9984", "-c", "64", "-j", "--no-tui"], // {method} method | 6.4k requests | 64 concurrent workers | return as json | don't run tui
         stdin: "null",
@@ -60,13 +59,18 @@ export async function benchmarkFramework(
       const parsedOutput: OhaJsonOutput = JSON.parse(
         textDecoder.decode(output.stdout),
       );
-      const convertedOutput = normalizeData(info, parsedOutput);
+      const convertedOutput = normalizeData(info as BenchmarkInfo, parsedOutput);
 
       results.push(convertedOutput);
     }
 
+    const headers = (await fetch(testedUrl)).headers;
+
     const result = routeOutputs[route] = {} as BenchmarkResult;
     meanNumericData(result, results);
+
+    result.headers = headers;
+    if (!result.headers) throw `${testedUrl} ${info.name}`;
 
     if (result.successRate !== 1) {
       try {
@@ -91,7 +95,7 @@ export async function benchmarkFramework(
 
     sumNumericObjects(benchmarkerOutput, output);
 
-    if (trackSteps) {
+    if (data.trackSteps) {
       benchmarkerOutput.steps ??= {};
       benchmarkerOutput.steps[route] = structuredClone(output);
     }

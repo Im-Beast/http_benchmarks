@@ -1,4 +1,5 @@
-import { HTTP_PORT, HTTP_URL, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
+import { HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
+import { HELLO_WORLD_MESSAGE } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Deno.serveHttp";
 export const DESCRIPTION = "";
@@ -12,6 +13,6 @@ if (import.meta.main) {
 
 async function serveHttp(conn: Deno.Conn) {
   for await (const event of Deno.serveHttp(conn)) {
-    event.respondWith(new Response(RESPONSE_MESSAGE));
+    event.respondWith(new Response(HELLO_WORLD_MESSAGE));
   }
 }

@@ -1,6 +1,8 @@
 import { Hono } from "https://deno.land/x/hono@v3.3.0/mod.ts";
 import { serveStatic } from "https://deno.land/x/hono@v3.3.0/middleware.ts";
-import { FILE_SERVER_PATH, HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
+
+import { HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
+import { FILE_SERVER_PATH } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Hono";
 export const DESCRIPTION = "";

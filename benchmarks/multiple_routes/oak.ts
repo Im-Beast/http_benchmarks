@@ -1,5 +1,7 @@
 import { Application } from "https://deno.land/x/oak@v12.6.0/mod.ts";
-import { HTTP_PORT, HTTP_URL, MULTIPLE_ROUTES, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
+
+import { HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
+import { MULTIPLE_ROUTES, MULTIPLE_ROUTES_HELLO, MULTIPLE_ROUTES_OK } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Oak";
 export const DESCRIPTION = "";
@@ -17,7 +19,7 @@ if (import.meta.main) {
       case "GET":
         switch (route) {
           case MULTIPLE_ROUTES.HELLO_WORLD:
-            context.response.body = RESPONSE_MESSAGE;
+            context.response.body = MULTIPLE_ROUTES_HELLO;
             break;
           case MULTIPLE_ROUTES.RANDOM_NUMBER:
             context.response.body = `${Math.random()}`;
@@ -32,11 +34,11 @@ if (import.meta.main) {
         switch (route) {
           case MULTIPLE_ROUTES.PLUS_1:
             count++;
-            context.response.body = "ok";
+            context.response.body = MULTIPLE_ROUTES_OK;
             break;
           case MULTIPLE_ROUTES.MINUS_1:
             count--;
-            context.response.body = "ok";
+            context.response.body = MULTIPLE_ROUTES_OK;
             break;
         }
         break;

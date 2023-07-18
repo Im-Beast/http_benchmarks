@@ -55,6 +55,7 @@ export interface BenchmarkResult {
   path: string;
   fileName: string;
   successRate: number;
+  headers: Headers;
   steps: {
     [name: string]: {
       throughput: BenchmarkResult["throughput"];
@@ -93,6 +94,7 @@ export interface BenchmarkResult {
 }
 
 export interface BenchmarkInfo {
+  headers: Headers;
   name: string;
   description: string;
   version: string;

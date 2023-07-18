@@ -3,8 +3,8 @@ import type { BenchmarkInfo } from "./types.ts";
 
 const BENCHMARK_PATH = "./benchmarks";
 
-export async function getBenchmarkList(): Promise<Record<string, BenchmarkInfo[]>> {
-  const benchmarkList: Record<string, BenchmarkInfo[]> = {};
+export async function getBenchmarkList(): Promise<Record<string, Omit<BenchmarkInfo, "headers">[]>> {
+  const benchmarkList: Record<string, Omit<BenchmarkInfo, "headers">[]> = {};
 
   for await (const entry of Deno.readDir(BENCHMARK_PATH)) {
     if (!entry.isDirectory || /SERVER_.+/.test(entry.name)) continue;
@@ -13,7 +13,7 @@ export async function getBenchmarkList(): Promise<Record<string, BenchmarkInfo[]
     const groupPath = join(BENCHMARK_PATH, entry.name);
 
     for await (const groupEntry of Deno.readDir(groupPath)) {
-      if (!groupEntry.isFile) continue;
+      if (!groupEntry.isFile || groupEntry.name === "BENCHMARK_DATA.ts") continue;
 
       const benchmarkPath = join(groupPath, groupEntry.name);
 

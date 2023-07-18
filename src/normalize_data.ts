@@ -87,6 +87,7 @@ export function normalizeData(info: BenchmarkInfo, oha: OhaJsonOutput): Benchmar
     version: info.version,
     path: info.path,
     fileName: info.fileName,
+    headers: info.headers,
     successRate: Math.min(successRateByCode, oha.summary.successRate),
     steps: {},
     latency: {

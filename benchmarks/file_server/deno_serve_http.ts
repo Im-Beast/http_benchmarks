@@ -1,6 +1,8 @@
-import { FILE_SERVER_PATH, HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
 import { getMimeType } from "https://deno.land/x/hono@v3.3.0/utils/mime.ts";
 import * as path from "https://deno.land/std@0.194.0/path/mod.ts";
+
+import { HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
+import { FILE_SERVER_PATH } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Deno.serveHttp";
 export const DESCRIPTION = "";

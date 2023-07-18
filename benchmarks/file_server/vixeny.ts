@@ -1,5 +1,7 @@
 import vixeny from "https://deno.land/x/endofunctor@v0.0.67/fun.ts";
-import { FILE_SERVER_PATH, PROTOCOL_HTTP_URL_PORT } from "../SERVER_DATA.ts";
+
+import { PROTOCOL_HTTP_URL_PORT } from "../SERVER_DATA.ts";
+import { FILE_SERVER_PATH } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Vixeny";
 export const DESCRIPTION = "";

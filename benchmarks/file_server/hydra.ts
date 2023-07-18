@@ -1,5 +1,7 @@
 import { Hydra } from "https://deno.land/x/hydra@0.1.1/mod.ts";
-import { FILE_SERVER_PATH, HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
+
+import { HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
+import { FILE_SERVER_PATH } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Hydra";
 export const DESCRIPTION = "";

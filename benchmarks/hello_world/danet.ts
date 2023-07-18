@@ -1,5 +1,7 @@
 import { Controller, DanetApplication, Get, Module } from "https://deno.land/x/danet@1.8.0/mod.ts";
-import { HTTP_PORT, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
+
+import { HTTP_PORT } from "../SERVER_DATA.ts";
+import { HELLO_WORLD_MESSAGE } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Danet";
 export const DESCRIPTION = "";
@@ -10,7 +12,7 @@ if (import.meta.main) {
   class HelloWorldController {
     @Get("/")
     hello() {
-      return RESPONSE_MESSAGE;
+      return HELLO_WORLD_MESSAGE;
     }
   }
 

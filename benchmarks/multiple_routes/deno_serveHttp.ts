@@ -1,4 +1,5 @@
-import { HTTP_PORT, HTTP_URL, MULTIPLE_ROUTES, PROTOCOL_HTTP_URL_PORT, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
+import { HTTP_PORT, HTTP_URL, PROTOCOL_HTTP_URL_PORT } from "../SERVER_DATA.ts";
+import { MULTIPLE_ROUTES, MULTIPLE_ROUTES_HELLO, MULTIPLE_ROUTES_OK } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Deno.serveHttp";
 export const DESCRIPTION = "";
@@ -23,7 +24,7 @@ async function serveHttp(conn: Deno.Conn) {
       case "GET":
         switch (route) {
           case MULTIPLE_ROUTES.HELLO_WORLD:
-            event.respondWith(new Response(RESPONSE_MESSAGE));
+            event.respondWith(new Response(MULTIPLE_ROUTES_HELLO));
             continue;
           case MULTIPLE_ROUTES.RANDOM_NUMBER:
             event.respondWith(new Response(`${Math.random()}`));
@@ -38,11 +39,11 @@ async function serveHttp(conn: Deno.Conn) {
         switch (route) {
           case MULTIPLE_ROUTES.PLUS_1:
             count++;
-            event.respondWith(new Response("ok"));
+            event.respondWith(new Response(MULTIPLE_ROUTES_OK));
             continue;
           case MULTIPLE_ROUTES.MINUS_1:
             count--;
-            event.respondWith(new Response("ok"));
+            event.respondWith(new Response(MULTIPLE_ROUTES_OK));
             continue;
         }
         break;

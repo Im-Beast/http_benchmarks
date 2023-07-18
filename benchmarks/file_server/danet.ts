@@ -1,5 +1,6 @@
 import { DanetApplication, Module } from "https://deno.land/x/danet@1.8.0/mod.ts";
-import { FILE_SERVER_PATH, HTTP_PORT } from "../SERVER_DATA.ts";
+import { HTTP_PORT } from "../SERVER_DATA.ts";
+import { FILE_SERVER_PATH } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Danet";
 export const DESCRIPTION = "";

@@ -1,5 +1,7 @@
 import { Application } from "https://deno.land/x/oak@v12.6.0/mod.ts";
-import { FILE_SERVER_PATH, HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
+
+import { HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
+import { FILE_SERVER_PATH } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Oak";
 export const DESCRIPTION = "";

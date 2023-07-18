@@ -1,14 +1,17 @@
+import { groupByHeaders } from "./headers.ts";
+import { Benchmark } from "./mod.ts";
 import { BenchmarkResult } from "./types.ts";
 
 export function formatNumber(number: number): string {
   return number > 1000 ? (number / 1000).toFixed(2) + "k" : number.toFixed(2);
 }
 
-export function formatResult(data: BenchmarkResult): string {
-  let output = `# Name: ${data.name} 
-  ${data.description ? `### Description: ${data.description}` : ""}
-  ### Version: ${data.version}
-  ### Deno version: ${Deno.version.deno}
+export function formatResult(data: Benchmark, result: BenchmarkResult): string {
+  let output = `# ${data.name}
+## Name: ${result.name} 
+${result.description ? `### Description: ${result.description}` : ""}
+### Version: ${result.version}
+### Deno version: ${Deno.version.deno}
 
 ## Summary
 <table>
@@ -26,13 +29,13 @@ export function formatResult(data: BenchmarkResult): string {
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>${formatNumber(data.throughput.mean)}</td>
-    <td>${formatNumber(data.throughput.max)}</td>
-    <td>${formatNumber(data.throughput.standardDeviation)}</td>
-    <td>${formatNumber(data.throughput.sizePerSecond)} MiB</td>
-    <td>${formatNumber(data.latency.average)}</td>
-    <td>${formatNumber(data.latency.min)}</td>
-    <td>${formatNumber(data.latency.max)}</td>
+    <td>${formatNumber(result.throughput.mean)}</td>
+    <td>${formatNumber(result.throughput.max)}</td>
+    <td>${formatNumber(result.throughput.standardDeviation)}</td>
+    <td>${formatNumber(result.throughput.sizePerSecond)} MiB</td>
+    <td>${formatNumber(result.latency.average)}</td>
+    <td>${formatNumber(result.latency.min)}</td>
+    <td>${formatNumber(result.latency.max)}</td>
 </tr>
 </table>
 
@@ -51,28 +54,28 @@ export function formatResult(data: BenchmarkResult): string {
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>${formatNumber(data.throughput.percentiles.p10)}</td>
-  <td>${formatNumber(data.throughput.percentiles.p25)}</td>
-  <td>${formatNumber(data.throughput.percentiles.p50)}</td>
-  <td>${formatNumber(data.throughput.percentiles.p75)}</td>
-  <td>${formatNumber(data.throughput.percentiles.p90)}</td>
-  <td>${formatNumber(data.throughput.percentiles.p95)}</td>
-  <td>${formatNumber(data.throughput.percentiles.p99)}</td>
+  <td>${formatNumber(result.throughput.percentiles.p10)}</td>
+  <td>${formatNumber(result.throughput.percentiles.p25)}</td>
+  <td>${formatNumber(result.throughput.percentiles.p50)}</td>
+  <td>${formatNumber(result.throughput.percentiles.p75)}</td>
+  <td>${formatNumber(result.throughput.percentiles.p90)}</td>
+  <td>${formatNumber(result.throughput.percentiles.p95)}</td>
+  <td>${formatNumber(result.throughput.percentiles.p99)}</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>${formatNumber(data.latency.percentiles.p10)}</td>
-  <td>${formatNumber(data.latency.percentiles.p25)}</td>
-  <td>${formatNumber(data.latency.percentiles.p50)}</td>
-  <td>${formatNumber(data.latency.percentiles.p75)}</td>
-  <td>${formatNumber(data.latency.percentiles.p90)}</td>
-  <td>${formatNumber(data.latency.percentiles.p95)}</td>
-  <td>${formatNumber(data.latency.percentiles.p99)}</td>
+  <td>${formatNumber(result.latency.percentiles.p10)}</td>
+  <td>${formatNumber(result.latency.percentiles.p25)}</td>
+  <td>${formatNumber(result.latency.percentiles.p50)}</td>
+  <td>${formatNumber(result.latency.percentiles.p75)}</td>
+  <td>${formatNumber(result.latency.percentiles.p90)}</td>
+  <td>${formatNumber(result.latency.percentiles.p95)}</td>
+  <td>${formatNumber(result.latency.percentiles.p99)}</td>
 </tr>
 </table>
 `;
 
-  if (Object.keys(data.steps).length) {
+  if (Object.keys(result.steps).length) {
     output += "\n## Individual test steps";
 
     let throughput = `
@@ -130,8 +133,8 @@ export function formatResult(data: BenchmarkResult): string {
 </tr>
 `;
 
-    for (const key in data.steps) {
-      const step = data.steps[key];
+    for (const key in result.steps) {
+      const step = result.steps[key];
 
       throughput += `<tr>
   <td>${key}</td>
@@ -172,8 +175,10 @@ export function formatResult(data: BenchmarkResult): string {
   return output;
 }
 
-export function formatResultComparison(dataset: BenchmarkResult[]): string {
-  let table = `<table>
+export function formatResultComparison(data: Benchmark, results: BenchmarkResult[]): string {
+  let table = `# ${data.name}
+  
+<table>
 <tr>
     <td align="center" rowspan="2">Name</td>
     <td align="center" colspan="2">Good-o-meter</td>
@@ -193,9 +198,9 @@ export function formatResultComparison(dataset: BenchmarkResult[]): string {
     <td align="center">Max</td>
 </tr>`;
 
-  const bestThroughput = dataset.sort((a, b) => b.throughput.mean - a.throughput.mean)[0];
-  const bestLatency = dataset.toSorted((a, b) => a.latency.average - b.latency.average)[0];
-  for (const data of dataset) {
+  const bestThroughput = results.sort((a, b) => b.throughput.mean - a.throughput.mean)[0];
+  const bestLatency = results.toSorted((a, b) => a.latency.average - b.latency.average)[0];
+  for (const data of results) {
     table += `<tr>
     <td><a href="./${data.fileName}.md">${data.name}</a></td>
     <td>${formatNumber(100 * (data.throughput.mean / bestThroughput.throughput.mean))}%</td>
@@ -214,4 +219,70 @@ export function formatResultComparison(dataset: BenchmarkResult[]): string {
   table += "</table>";
 
   return table;
+}
+
+export function formatGrouppedResultsComparison(data: Benchmark, dataset: BenchmarkResult[]): string {
+  const grouppedByHeaders = groupByHeaders(dataset);
+
+  let markdown = `# ${data.name}
+## Benchmarks groupped by headers they respond with`;
+
+  const tables: [headerAmount: number, table: string][] = [];
+
+  for (const group in grouppedByHeaders) {
+    const headers = group.split(",");
+    const header = headers.map((header) => `\`${header}\``).reduce((p, n) => p + (p ? "," : "") + n, "");
+
+    let table = `\n\n### ${header}\n\n
+<table>
+<tr>
+    <td align="center" rowspan="2">Name</td>
+    <td align="center" colspan="2">Good-o-meter</td>
+    <td align="center" colspan="4">Throughput (rps)</td>
+    <td align="center" colspan="3">Latency (ms)</td>
+</tr>
+<tr>
+    <!-- still Name -->
+    <td align="center">Throughput</td>
+    <td align="center">Latency</td>
+    <td align="center">Mean</td>
+    <td align="center">Max</td>
+    <td align="center">Standard deviation</td>
+    <td align="center">Size per second</td>
+    <td align="center">Avg</td>
+    <td align="center">Min</td>
+    <td align="center">Max</td>
+</tr>`;
+
+    const dataset = grouppedByHeaders[group];
+    const bestThroughput = dataset.sort((a, b) => b.throughput.mean - a.throughput.mean)[0];
+    const bestLatency = dataset.toSorted((a, b) => a.latency.average - b.latency.average)[0];
+    for (const data of dataset) {
+      table += `<tr>
+    <td><a href="./${data.fileName}.md">${data.name}</a></td>
+    <td>${formatNumber(100 * (data.throughput.mean / bestThroughput.throughput.mean))}%</td>
+    <td>${formatNumber(100 * (bestLatency.latency.average / data.latency.average))}%</td>
+    <td>${formatNumber(data.throughput.mean)}</td>
+    <td>${formatNumber(data.throughput.max)}</td>
+    <td>${formatNumber(data.throughput.standardDeviation)}</td>
+    <td>${formatNumber(data.throughput.sizePerSecond)} MiB</td>
+    <td>${formatNumber(data.latency.average)}</td>
+    <td>${formatNumber(data.latency.min)}</td>
+    <td>${formatNumber(data.latency.max)}</td>
+</tr>
+`;
+    }
+
+    table += "</table>";
+
+    tables.push([headers.length, table]);
+  }
+
+  tables.sort(([a], [b]) => b - a);
+
+  for (const [_, table] of tables) {
+    markdown += table;
+  }
+
+  return markdown;
 }

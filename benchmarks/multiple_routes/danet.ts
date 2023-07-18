@@ -1,5 +1,7 @@
 import { Controller, DanetApplication, Get, Module, Post } from "https://deno.land/x/danet@1.8.0/mod.ts";
-import { HTTP_PORT, MULTIPLE_ROUTES, RESPONSE_MESSAGE } from "../SERVER_DATA.ts";
+
+import { HTTP_PORT } from "../SERVER_DATA.ts";
+import { MULTIPLE_ROUTES, MULTIPLE_ROUTES_HELLO, MULTIPLE_ROUTES_OK } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Danet";
 export const DESCRIPTION = "";
@@ -12,7 +14,7 @@ if (import.meta.main) {
 
     @Get(MULTIPLE_ROUTES.HELLO_WORLD)
     hello() {
-      return RESPONSE_MESSAGE;
+      return MULTIPLE_ROUTES_HELLO;
     }
 
     @Get(MULTIPLE_ROUTES.RANDOM_NUMBER)
@@ -23,13 +25,13 @@ if (import.meta.main) {
     @Post(MULTIPLE_ROUTES.PLUS_1)
     plus1() {
       this.counter++;
-      return "ok";
+      return MULTIPLE_ROUTES_OK;
     }
 
     @Post(MULTIPLE_ROUTES.MINUS_1)
     minus1() {
       this.counter--;
-      return "ok";
+      return MULTIPLE_ROUTES_OK;
     }
 
     @Get(MULTIPLE_ROUTES.COUNT)
