@@ -1,6 +1,6 @@
 # Name: NHttp (flash) 
   ### Description: NHttp with `flash` option set to `true`
-  ### Version: 1.3.0
+  ### Version: 1.3.2
   ### Deno version: 1.35.0
 
 ## Summary

@@ -1,7 +1,8 @@
-# Name: cheetah 
-  
-  ### Version: 1.0.0-canary.1
-  ### Deno version: 1.35.1
+# Hello world
+## Name: cheetah 
+
+### Version: 1.0.2
+### Deno version: 1.35.1
 
 ## Summary
 <table>
@@ -19,13 +20,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>64.75k</td>
-    <td>66.66k</td>
-    <td>2.74k</td>
-    <td>0.68 MiB</td>
-    <td>0.98</td>
-    <td>0.77</td>
-    <td>1.81</td>
+    <td>91.77k</td>
+    <td>96.36k</td>
+    <td>4.59k</td>
+    <td>0.96 MiB</td>
+    <td>0.69</td>
+    <td>0.55</td>
+    <td>1.47</td>
 </tr>
 </table>
 
@@ -44,22 +45,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>59685.02k</td>
-  <td>59685.02k</td>
-  <td>59685.02k</td>
-  <td>59685.02k</td>
-  <td>66455.58k</td>
-  <td>66662.11k</td>
-  <td>66662.11k</td>
+  <td>85085.80k</td>
+  <td>85085.80k</td>
+  <td>85085.80k</td>
+  <td>85085.80k</td>
+  <td>96317.44k</td>
+  <td>96355.50k</td>
+  <td>96355.50k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.87</td>
-  <td>0.87</td>
-  <td>0.87</td>
-  <td>0.87</td>
-  <td>1.09</td>
-  <td>1.10</td>
-  <td>1.20</td>
+  <td>0.60</td>
+  <td>0.60</td>
+  <td>0.60</td>
+  <td>0.60</td>
+  <td>0.78</td>
+  <td>0.82</td>
+  <td>1.15</td>
 </tr>
 </table>

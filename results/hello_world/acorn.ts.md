@@ -1,7 +1,8 @@
-# Name: Acorn 
-  
-  ### Version: 0.3.0
-  ### Deno version: 1.35.1
+# Hello world
+## Name: Acorn 
+
+### Version: 0.4.0
+### Deno version: 1.35.1
 
 ## Summary
 <table>
@@ -19,13 +20,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>5.71k</td>
-    <td>56.65k</td>
-    <td>4.79k</td>
-    <td>0.04 MiB</td>
-    <td>15.02</td>
-    <td>4.80</td>
-    <td>25.60</td>
+    <td>5.72k</td>
+    <td>29.78k</td>
+    <td>3.14k</td>
+    <td>0.06 MiB</td>
+    <td>11.58</td>
+    <td>3.94</td>
+    <td>21.55</td>
 </tr>
 </table>
 
@@ -44,22 +45,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>3611.74k</td>
-  <td>3611.74k</td>
-  <td>3611.74k</td>
-  <td>3611.74k</td>
-  <td>9676.45k</td>
-  <td>12791.50k</td>
-  <td>21943.81k</td>
+  <td>4086.65k</td>
+  <td>4086.65k</td>
+  <td>4086.65k</td>
+  <td>4086.65k</td>
+  <td>11823.97k</td>
+  <td>14968.04k</td>
+  <td>16885.41k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>12.77</td>
-  <td>12.77</td>
-  <td>12.77</td>
-  <td>12.77</td>
-  <td>17.69</td>
-  <td>19.87</td>
-  <td>22.55</td>
+  <td>8.99</td>
+  <td>8.99</td>
+  <td>8.99</td>
+  <td>8.99</td>
+  <td>14.38</td>
+  <td>15.84</td>
+  <td>19.06</td>
 </tr>
 </table>

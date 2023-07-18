@@ -1,7 +1,8 @@
-# Name: Deno.serve 
-  
-  ### Version: Deno 1.35.1
-  ### Deno version: 1.35.1
+# Hello world
+## Name: Deno.serve 
+
+### Version: Deno 1.35.1
+### Deno version: 1.35.1
 
 ## Summary
 <table>
@@ -19,13 +20,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>168.92k</td>
-    <td>174.44k</td>
-    <td>9.46k</td>
-    <td>1.77 MiB</td>
-    <td>0.37</td>
-    <td>0.30</td>
-    <td>1.18</td>
+    <td>157.18k</td>
+    <td>177.10k</td>
+    <td>18.39k</td>
+    <td>1.71 MiB</td>
+    <td>0.39</td>
+    <td>0.29</td>
+    <td>1.07</td>
 </tr>
 </table>
 
@@ -44,13 +45,13 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>155014.21k</td>
-  <td>155014.21k</td>
-  <td>155014.21k</td>
-  <td>155014.21k</td>
-  <td>174437.31k</td>
-  <td>174437.31k</td>
-  <td>174437.31k</td>
+  <td>118039.18k</td>
+  <td>118039.18k</td>
+  <td>118039.18k</td>
+  <td>118039.18k</td>
+  <td>177100.80k</td>
+  <td>177100.80k</td>
+  <td>177100.80k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
@@ -58,8 +59,8 @@
   <td>0.33</td>
   <td>0.33</td>
   <td>0.33</td>
-  <td>0.42</td>
-  <td>0.45</td>
-  <td>0.55</td>
+  <td>0.46</td>
+  <td>0.49</td>
+  <td>0.84</td>
 </tr>
 </table>

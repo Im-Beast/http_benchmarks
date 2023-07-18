@@ -1,7 +1,8 @@
-# Name: Opine 
-  
-  ### Version: 2.3.4
-  ### Deno version: 1.35.1
+# Hello world
+## Name: Opine 
+
+### Version: 2.3.4
+### Deno version: 1.35.1
 
 ## Summary
 <table>
@@ -19,13 +20,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>19.38k</td>
-    <td>20.94k</td>
-    <td>1.15k</td>
-    <td>0.20 MiB</td>
-    <td>3.27</td>
-    <td>1.44</td>
-    <td>7.37</td>
+    <td>16.82k</td>
+    <td>19.09k</td>
+    <td>1.83k</td>
+    <td>0.18 MiB</td>
+    <td>3.79</td>
+    <td>1.61</td>
+    <td>7.89</td>
 </tr>
 </table>
 
@@ -44,22 +45,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>18693.56k</td>
-  <td>18693.56k</td>
-  <td>18693.56k</td>
-  <td>18693.56k</td>
-  <td>20395.00k</td>
-  <td>20517.63k</td>
-  <td>20936.20k</td>
+  <td>14703.40k</td>
+  <td>14703.40k</td>
+  <td>14703.40k</td>
+  <td>14703.40k</td>
+  <td>18339.79k</td>
+  <td>18409.36k</td>
+  <td>19085.97k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>2.81</td>
-  <td>2.81</td>
-  <td>2.81</td>
-  <td>2.81</td>
-  <td>4.06</td>
-  <td>4.43</td>
-  <td>4.96</td>
+  <td>3.16</td>
+  <td>3.16</td>
+  <td>3.16</td>
+  <td>3.16</td>
+  <td>4.67</td>
+  <td>5.19</td>
+  <td>6.33</td>
 </tr>
 </table>

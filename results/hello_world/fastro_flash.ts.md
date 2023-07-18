@@ -1,7 +1,8 @@
-# Name: Fastro (flash) 
-  
-  ### Version: 0.70.5
-  ### Deno version: 1.35.1
+# Hello world
+## Name: Fastro (flash) 
+
+### Version: 0.70.5
+### Deno version: 1.35.1
 
 ## Summary
 <table>
@@ -19,13 +20,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>147.78k</td>
-    <td>150.56k</td>
-    <td>8.14k</td>
-    <td>1.55 MiB</td>
-    <td>0.43</td>
-    <td>0.33</td>
-    <td>1.36</td>
+    <td>136.95k</td>
+    <td>147.81k</td>
+    <td>8.34k</td>
+    <td>1.45 MiB</td>
+    <td>0.46</td>
+    <td>0.35</td>
+    <td>1.21</td>
 </tr>
 </table>
 
@@ -44,22 +45,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>133049.12k</td>
-  <td>133049.12k</td>
-  <td>133049.12k</td>
-  <td>133049.12k</td>
-  <td>150556.08k</td>
-  <td>150556.08k</td>
-  <td>150556.08k</td>
+  <td>126947.78k</td>
+  <td>126947.78k</td>
+  <td>126947.78k</td>
+  <td>126947.78k</td>
+  <td>147807.79k</td>
+  <td>147807.79k</td>
+  <td>147807.79k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.38</td>
-  <td>0.38</td>
-  <td>0.38</td>
-  <td>0.38</td>
-  <td>0.48</td>
-  <td>0.52</td>
-  <td>0.58</td>
+  <td>0.39</td>
+  <td>0.39</td>
+  <td>0.39</td>
+  <td>0.39</td>
+  <td>0.54</td>
+  <td>0.60</td>
+  <td>1.00</td>
 </tr>
 </table>
