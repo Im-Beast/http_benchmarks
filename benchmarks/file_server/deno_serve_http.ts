@@ -1,4 +1,4 @@
-import { getMimeType } from "https://deno.land/x/hono@v3.3.0/utils/mime.ts";
+import { getMimeType } from "https://deno.land/x/hono@v3.3.1/utils/mime.ts";
 import * as path from "https://deno.land/std@0.194.0/path/mod.ts";
 
 import { HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";

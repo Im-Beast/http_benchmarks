@@ -1,11 +1,11 @@
-import { Router } from "https://deno.land/x/acorn@0.3.0/mod.ts";
+import { Router } from "https://deno.land/x/acorn@0.4.0/mod.ts";
 
 import { HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
 import { MULTIPLE_ROUTES, MULTIPLE_ROUTES_HELLO, MULTIPLE_ROUTES_OK } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Acorn";
 export const DESCRIPTION = "";
-export const VERSION = "0.3.0";
+export const VERSION = "0.4.0";
 
 if (import.meta.main) {
   const app = new Router();
