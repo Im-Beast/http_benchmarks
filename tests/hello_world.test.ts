@@ -1,7 +1,9 @@
 import { assertEquals } from "./deps.ts";
 
-import { PROTOCOL_HTTP_URL_PORT, RESPONSE_MESSAGE } from "../benchmarks/SERVER_DATA.ts";
+import { PROTOCOL_HTTP_URL_PORT } from "../benchmarks/SERVER_DATA.ts";
 import { getBenchmarkList } from "../src/get_benchmarks.ts";
+
+import { HELLO_WORLD_MESSAGE } from "../benchmarks/hello_world/BENCHMARK_DATA.ts";
 
 const benchmarks = (await getBenchmarkList())["hello_world"];
 
@@ -20,7 +22,7 @@ Deno.test("hello_world", async (t) => {
       await new Promise((r) => setTimeout(r, 1000));
 
       for (let i = 0; i < 10; ++i) {
-        assertEquals(await (await fetch(PROTOCOL_HTTP_URL_PORT)).text(), RESPONSE_MESSAGE);
+        assertEquals(await (await fetch(PROTOCOL_HTTP_URL_PORT)).text(), HELLO_WORLD_MESSAGE);
       }
 
       denoSubprocess.kill();

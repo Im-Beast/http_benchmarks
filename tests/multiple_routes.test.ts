@@ -1,16 +1,15 @@
 import { assert, assertEquals, join } from "./deps.ts";
 
-import { MULTIPLE_ROUTES, PROTOCOL_HTTP_URL_PORT, RESPONSE_MESSAGE } from "../benchmarks/SERVER_DATA.ts";
+import { PROTOCOL_HTTP_URL_PORT } from "../benchmarks/SERVER_DATA.ts";
 import { getBenchmarkList } from "../src/get_benchmarks.ts";
 
-const benchmarks = (await getBenchmarkList())["multiple_routes"];
+import {
+  MULTIPLE_ROUTES,
+  MULTIPLE_ROUTES_HELLO,
+  MULTIPLE_ROUTES_OK,
+} from "../benchmarks/multiple_routes/BENCHMARK_DATA.ts";
 
-/*   ["GET", MULTIPLE_ROUTES.RANDOM_NUMBER, 1],
-  ["GET", MULTIPLE_ROUTES.HELLO_WORLD, 1],
-  ["POST", MULTIPLE_ROUTES.PLUS_1, 1],
-  ["GET", MULTIPLE_ROUTES.COUNT, 1],
-  ["POST", MULTIPLE_ROUTES.MINUS_1, 1],
-  ["GET", MULTIPLE_ROUTES.COUNT, 1], */
+const benchmarks = (await getBenchmarkList())["multiple_routes"];
 
 const routes: Record<MULTIPLE_ROUTES, string> = {
   "/count": join(PROTOCOL_HTTP_URL_PORT, "/count"),
@@ -47,14 +46,14 @@ Deno.test("multiple_routes", async (t) => {
       await t.step("/plus_1 + /count", async () => {
         for (let j = 0; j < 15; ++j) {
           assertEquals(await get(routes["/count"]), `${j}`);
-          assertEquals(await post(routes["/plus_1"]), "ok");
+          assertEquals(await post(routes["/plus_1"]), MULTIPLE_ROUTES_OK);
         }
       });
 
       await t.step("/minus_1 + /count", async () => {
         for (let j = 15; j > 0; --j) {
           assertEquals(await get(routes["/count"]), `${j}`);
-          assertEquals(await post(routes["/minus_1"]), "ok");
+          assertEquals(await post(routes["/minus_1"]), MULTIPLE_ROUTES_OK);
         }
       });
 
@@ -67,7 +66,7 @@ Deno.test("multiple_routes", async (t) => {
 
       await t.step("/hello_world", async () => {
         for (let i = 0; i < 10; ++i) {
-          assertEquals(await get(routes["/hello_world"]), RESPONSE_MESSAGE);
+          assertEquals(await get(routes["/hello_world"]), MULTIPLE_ROUTES_HELLO);
         }
       });
 
