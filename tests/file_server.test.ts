@@ -15,8 +15,6 @@ async function updateChangeFile() {
 }
 await updateChangeFile();
 
-const headers: Record<string, string[]> = {};
-
 Deno.test("file_server", async (t) => {
   for (const benchmark of benchmarks) {
     await t.step({
@@ -78,6 +76,5 @@ Deno.test("file_server", async (t) => {
 });
 
 addEventListener("unload", async () => {
-  await Deno.writeTextFile("headers.json", JSON.stringify(headers));
   await Deno.remove(join(FILE_SERVER_PATH, "this-changes.txt"));
 });
