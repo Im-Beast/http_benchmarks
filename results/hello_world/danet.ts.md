@@ -2,7 +2,7 @@
 ## Name: Danet 
 
 ### Version: 1.8.0
-### Deno version: 1.35.1
+### Deno version: 1.35.2
 
 ## Summary
 <table>
@@ -20,13 +20,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>29.81k</td>
-    <td>33.52k</td>
-    <td>7.62k</td>
-    <td>0.31 MiB</td>
-    <td>2.13</td>
-    <td>0.73</td>
-    <td>6.62</td>
+    <td>22.97k</td>
+    <td>27.90k</td>
+    <td>3.35k</td>
+    <td>0.24 MiB</td>
+    <td>2.76</td>
+    <td>1.50</td>
+    <td>18.49</td>
 </tr>
 </table>
 
@@ -45,22 +45,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>26918.99k</td>
-  <td>26918.99k</td>
-  <td>26918.99k</td>
-  <td>26918.99k</td>
-  <td>32769.52k</td>
-  <td>33347.02k</td>
-  <td>33516.16k</td>
+  <td>17955.90k</td>
+  <td>17955.90k</td>
+  <td>17955.90k</td>
+  <td>17955.90k</td>
+  <td>26053.37k</td>
+  <td>26531.29k</td>
+  <td>27897.72k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>1.73</td>
-  <td>1.73</td>
-  <td>1.73</td>
-  <td>1.73</td>
-  <td>2.68</td>
-  <td>3.07</td>
-  <td>4.03</td>
+  <td>2.25</td>
+  <td>2.25</td>
+  <td>2.25</td>
+  <td>2.25</td>
+  <td>3.56</td>
+  <td>3.97</td>
+  <td>6.20</td>
 </tr>
 </table>

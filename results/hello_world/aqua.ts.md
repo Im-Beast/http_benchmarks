@@ -2,7 +2,7 @@
 ## Name: Aqua 
 
 ### Version: 1.3.5
-### Deno version: 1.35.1
+### Deno version: 1.35.2
 
 ## Summary
 <table>
@@ -20,13 +20,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>43.19k</td>
-    <td>47.20k</td>
-    <td>4.58k</td>
-    <td>0.45 MiB</td>
-    <td>1.48</td>
-    <td>0.72</td>
-    <td>5.53</td>
+    <td>31.62k</td>
+    <td>38.91k</td>
+    <td>6.77k</td>
+    <td>0.33 MiB</td>
+    <td>2.03</td>
+    <td>0.92</td>
+    <td>19.82</td>
 </tr>
 </table>
 
@@ -45,22 +45,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>37510.49k</td>
-  <td>37510.49k</td>
-  <td>37510.49k</td>
-  <td>37510.49k</td>
-  <td>47069.79k</td>
-  <td>47150.09k</td>
-  <td>47197.37k</td>
+  <td>24735.84k</td>
+  <td>24735.84k</td>
+  <td>24735.84k</td>
+  <td>24735.84k</td>
+  <td>37366.13k</td>
+  <td>38105.45k</td>
+  <td>38910.61k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>1.20</td>
-  <td>1.20</td>
-  <td>1.20</td>
-  <td>1.20</td>
-  <td>1.90</td>
-  <td>2.28</td>
-  <td>3.26</td>
+  <td>1.57</td>
+  <td>1.57</td>
+  <td>1.57</td>
+  <td>1.57</td>
+  <td>2.42</td>
+  <td>2.70</td>
+  <td>4.69</td>
 </tr>
 </table>
