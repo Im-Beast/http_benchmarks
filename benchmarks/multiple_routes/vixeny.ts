@@ -1,11 +1,11 @@
-import vixeny from "https://deno.land/x/endofunctor@v0.0.675/fun.ts";
+import vixeny from "https://deno.land/x/endofunctor@v0.0.682/fun.ts";
 
 import { PROTOCOL_HTTP_URL_PORT } from "../SERVER_DATA.ts";
 import { MULTIPLE_ROUTES, MULTIPLE_ROUTES_HELLO, MULTIPLE_ROUTES_OK } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Vixeny";
 export const DESCRIPTION = "";
-export const VERSION = "0.0.675";
+export const VERSION = "0.0.682";
 
 if (import.meta.main) {
   let count = 0;
