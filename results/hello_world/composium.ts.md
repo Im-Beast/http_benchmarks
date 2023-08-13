@@ -2,7 +2,7 @@
 ## Name: Composium 
 
 ### Version: 0.1.1
-### Deno version: 1.35.2
+### Deno version: 1.36.0
 
 ## Summary
 <table>
@@ -20,13 +20,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>22.92k</td>
-    <td>25.47k</td>
-    <td>2.62k</td>
+    <td>23.24k</td>
+    <td>26.65k</td>
+    <td>2.59k</td>
     <td>0.24 MiB</td>
-    <td>2.77</td>
+    <td>2.74</td>
     <td>1.39</td>
-    <td>14.20</td>
+    <td>5.55</td>
 </tr>
 </table>
 
@@ -45,22 +45,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>19225.38k</td>
-  <td>19225.38k</td>
-  <td>19225.38k</td>
-  <td>19225.38k</td>
-  <td>24806.03k</td>
-  <td>24893.97k</td>
-  <td>25466.35k</td>
+  <td>19927.60k</td>
+  <td>19927.60k</td>
+  <td>19927.60k</td>
+  <td>19927.60k</td>
+  <td>26006.78k</td>
+  <td>26445.75k</td>
+  <td>26653.07k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>2.39</td>
-  <td>2.39</td>
-  <td>2.39</td>
-  <td>2.39</td>
-  <td>3.26</td>
-  <td>3.72</td>
-  <td>4.92</td>
+  <td>2.29</td>
+  <td>2.29</td>
+  <td>2.29</td>
+  <td>2.29</td>
+  <td>3.34</td>
+  <td>3.60</td>
+  <td>5.01</td>
 </tr>
 </table>

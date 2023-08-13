@@ -1,7 +1,7 @@
 # Multiple routes
 ## Name: Fastro (flash) 
 
-### Version: 0.70.5
+### Version: 0.78.2
 ### Deno version: 1.35.2
 
 ## Summary

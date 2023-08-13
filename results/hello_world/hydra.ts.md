@@ -2,7 +2,7 @@
 ## Name: Hydra 
 
 ### Version: 0.1.1
-### Deno version: 1.35.2
+### Deno version: 1.36.0
 
 ## Summary
 <table>
@@ -20,13 +20,13 @@
     <td align="center">Max</td>
 </tr>
 <tr>
-    <td>56.00k</td>
-    <td>66.34k</td>
-    <td>5.12k</td>
-    <td>0.59 MiB</td>
-    <td>1.13</td>
-    <td>0.61</td>
-    <td>13.35</td>
+    <td>57.59k</td>
+    <td>70.00k</td>
+    <td>7.88k</td>
+    <td>0.62 MiB</td>
+    <td>1.08</td>
+    <td>0.15</td>
+    <td>2.80</td>
 </tr>
 </table>
 
@@ -45,22 +45,22 @@
 </tr>
 <tr>
   <td>Throughput (rps)</td>
-  <td>52753.68k</td>
-  <td>52753.68k</td>
-  <td>52753.68k</td>
-  <td>52753.68k</td>
-  <td>65108.52k</td>
-  <td>66338.48k</td>
-  <td>66338.48k</td>
+  <td>52140.54k</td>
+  <td>52140.54k</td>
+  <td>52140.54k</td>
+  <td>52140.54k</td>
+  <td>69024.53k</td>
+  <td>70001.35k</td>
+  <td>70001.35k</td>
 </tr>
 <tr>
   <td>Latency (ms)</td>
-  <td>0.90</td>
-  <td>0.90</td>
-  <td>0.90</td>
-  <td>0.90</td>
+  <td>0.85</td>
+  <td>0.85</td>
+  <td>0.85</td>
+  <td>0.85</td>
   <td>1.31</td>
-  <td>1.38</td>
-  <td>1.66</td>
+  <td>1.41</td>
+  <td>1.74</td>
 </tr>
 </table>

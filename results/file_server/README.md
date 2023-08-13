@@ -26,25 +26,25 @@
     <td><a href="./oak.ts.md">Oak</a></td>
     <td>100.00%</td>
     <td>100.00%</td>
-    <td>3.91k</td>
-    <td>10.76k</td>
-    <td>1.39k</td>
-    <td>20.47 MiB</td>
-    <td>16.52</td>
-    <td>7.78</td>
-    <td>27.38</td>
+    <td>3.77k</td>
+    <td>8.98k</td>
+    <td>1.34k</td>
+    <td>19.83 MiB</td>
+    <td>17.04</td>
+    <td>7.48</td>
+    <td>25.44</td>
 </tr>
 <tr>
     <td><a href="./danet.ts.md">Danet</a></td>
-    <td>97.78%</td>
-    <td>98.39%</td>
-    <td>3.82k</td>
-    <td>11.30k</td>
-    <td>1.40k</td>
-    <td>20.13 MiB</td>
-    <td>16.79</td>
-    <td>7.99</td>
-    <td>32.13</td>
+    <td>99.67%</td>
+    <td>99.23%</td>
+    <td>3.76k</td>
+    <td>13.93k</td>
+    <td>1.51k</td>
+    <td>19.68 MiB</td>
+    <td>17.17</td>
+    <td>7.35</td>
+    <td>25.84</td>
 </tr>
 </table>
 
@@ -74,12 +74,12 @@
     <td>100.00%</td>
     <td>100.00%</td>
     <td>1.60k</td>
-    <td>5.67k</td>
-    <td>847.66</td>
-    <td>8.14 MiB</td>
-    <td>41.45</td>
-    <td>3.95</td>
-    <td>51.06</td>
+    <td>6.14k</td>
+    <td>953.28</td>
+    <td>8.13 MiB</td>
+    <td>41.50</td>
+    <td>4.12</td>
+    <td>58.60</td>
 </tr>
 </table>
 
@@ -108,72 +108,72 @@
     <td><a href="./hydra.ts.md">Hydra</a></td>
     <td>100.00%</td>
     <td>100.00%</td>
-    <td>12.28k</td>
-    <td>14.42k</td>
-    <td>1.28k</td>
-    <td>65.06 MiB</td>
-    <td>5.19</td>
-    <td>1.63</td>
-    <td>15.20</td>
+    <td>12.18k</td>
+    <td>14.60k</td>
+    <td>1.24k</td>
+    <td>64.47 MiB</td>
+    <td>5.23</td>
+    <td>1.57</td>
+    <td>9.35</td>
 </tr>
 <tr>
     <td><a href="./vixeny.ts.md">Vixeny</a></td>
-    <td>84.76%</td>
-    <td>84.73%</td>
-    <td>10.41k</td>
-    <td>12.99k</td>
-    <td>1.78k</td>
-    <td>55.14 MiB</td>
-    <td>6.12</td>
-    <td>1.97</td>
-    <td>21.15</td>
+    <td>88.46%</td>
+    <td>88.36%</td>
+    <td>10.78k</td>
+    <td>13.44k</td>
+    <td>1.52k</td>
+    <td>57.00 MiB</td>
+    <td>5.92</td>
+    <td>2.19</td>
+    <td>11.95</td>
 </tr>
 <tr>
     <td><a href="./aqua.ts.md">Aqua</a></td>
-    <td>67.09%</td>
-    <td>66.90%</td>
-    <td>8.24k</td>
-    <td>11.96k</td>
-    <td>1.67k</td>
-    <td>43.54 MiB</td>
-    <td>7.75</td>
-    <td>3.77</td>
-    <td>25.09</td>
+    <td>68.31%</td>
+    <td>68.36%</td>
+    <td>8.32k</td>
+    <td>11.87k</td>
+    <td>1.60k</td>
+    <td>44.11 MiB</td>
+    <td>7.65</td>
+    <td>4.23</td>
+    <td>15.85</td>
 </tr>
 <tr>
     <td><a href="./deno_serve.ts.md">Deno.serve</a></td>
-    <td>19.58%</td>
-    <td>12.59%</td>
-    <td>2.41k</td>
-    <td>139.92k</td>
-    <td>7.54k</td>
-    <td>8.20 MiB</td>
-    <td>41.21</td>
-    <td>2.57</td>
-    <td>46.95</td>
+    <td>14.86%</td>
+    <td>12.71%</td>
+    <td>1.81k</td>
+    <td>104.51k</td>
+    <td>4.05k</td>
+    <td>8.21 MiB</td>
+    <td>41.17</td>
+    <td>4.30</td>
+    <td>47.23</td>
 </tr>
 <tr>
     <td><a href="./hono.ts.md">Hono</a></td>
-    <td>17.10%</td>
-    <td>12.57%</td>
-    <td>2.10k</td>
-    <td>159.72k</td>
-    <td>5.98k</td>
-    <td>8.18 MiB</td>
-    <td>41.27</td>
-    <td>8.05</td>
-    <td>49.10</td>
+    <td>14.47%</td>
+    <td>12.67%</td>
+    <td>1.76k</td>
+    <td>44.61k</td>
+    <td>1.95k</td>
+    <td>8.17 MiB</td>
+    <td>41.30</td>
+    <td>9.17</td>
+    <td>47.93</td>
 </tr>
 <tr>
     <td><a href="./deno_serve_http.ts.md">Deno.serveHttp</a></td>
-    <td>13.37%</td>
-    <td>12.53%</td>
-    <td>1.64k</td>
-    <td>4.73k</td>
-    <td>901.42</td>
+    <td>13.36%</td>
+    <td>12.63%</td>
+    <td>1.63k</td>
+    <td>6.06k</td>
+    <td>888.09</td>
     <td>5.11 MiB</td>
-    <td>41.38</td>
-    <td>10.69</td>
-    <td>49.03</td>
+    <td>41.42</td>
+    <td>9.35</td>
+    <td>50.09</td>
 </tr>
 </table>
