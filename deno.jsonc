@@ -6,7 +6,7 @@
   "tasks": {
     "raw-bench": "rm results/cache.json && deno task bench",
     "bench": "deno run --allow-env=DENO_DEPLOYMENT_ID --allow-read=.,./benchmarks/ --allow-write=results --allow-run=deno,oha --allow-net src/mod.ts",
-    "test": "deno test --allow-env=DENO_DEPLOYMENT_ID --allow-read=.,./benchmarks/ --allow-write=tests --allow-run=deno,oha --allow-net"
+    "test": "deno test --allow-env=DENO_DEPLOYMENT_ID --allow-read=.,./benchmarks/ --allow-write=tests,benchmarks/file_server/FILE_SERVER_FILES --allow-run=deno,oha --allow-net"
   },
   "lock": false
 }
