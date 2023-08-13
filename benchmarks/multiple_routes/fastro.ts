@@ -1,16 +1,15 @@
-import fastro from "https://deno.land/x/fastro@v0.70.5/server/mod.ts";
+import fastro from "https://deno.land/x/fastro@v0.78.2/server/mod.ts";
 
-import { HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
+import { HTTP_PORT } from "../SERVER_DATA.ts";
 import { MULTIPLE_ROUTES, MULTIPLE_ROUTES_HELLO, MULTIPLE_ROUTES_OK } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Fastro";
 export const DESCRIPTION = "";
-export const VERSION = "0.70.5";
+export const VERSION = "0.78.2";
 
 if (import.meta.main) {
   const app = fastro();
 
-  app.flash(false);
   app.get(MULTIPLE_ROUTES.HELLO_WORLD, () => MULTIPLE_ROUTES_HELLO);
   app.get(MULTIPLE_ROUTES.RANDOM_NUMBER, () => `${Math.random()}`);
 
@@ -26,7 +25,6 @@ if (import.meta.main) {
   app.get(MULTIPLE_ROUTES.COUNT, () => `${counter}`);
 
   await app.serve({
-    hostname: HTTP_URL,
     port: HTTP_PORT,
   });
 }
