@@ -2,7 +2,7 @@ import { assert, assertEquals, assertStringIncludes, join } from "./deps.ts";
 
 import { PROTOCOL_HTTP_URL_PORT } from "../benchmarks/SERVER_DATA.ts";
 import { getBenchmarkList } from "../src/get_benchmarks.ts";
-import { getMimeType } from "https://deno.land/x/hono@v3.2.7/utils/mime.ts";
+import { getMimeType } from "./deps.ts";
 
 import { FILE_SERVER_PATH } from "../benchmarks/file_server/BENCHMARK_DATA.ts";
 
