@@ -1,12 +1,12 @@
-import { Hono } from "https://deno.land/x/hono@v3.4.1/mod.ts";
-import { serveStatic } from "https://deno.land/x/hono@v3.4.1/middleware.ts";
+import { Hono } from "https://deno.land/x/hono@v3.4.3/mod.ts";
+import { serveStatic } from "https://deno.land/x/hono@v3.4.3/middleware.ts";
 
 import { HTTP_PORT, HTTP_URL } from "../SERVER_DATA.ts";
 import { FILE_SERVER_PATH } from "./BENCHMARK_DATA.ts";
 
 export const NAME = "Hono";
 export const DESCRIPTION = "";
-export const VERSION = "3.4.1";
+export const VERSION = "3.4.3";
 
 if (import.meta.main) {
   const app = new Hono();
